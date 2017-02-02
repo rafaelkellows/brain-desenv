@@ -1,0 +1,682 @@
+/*******************************
+          RESPONSIVE
+*******************************/
+@media screen and (max-width: 1024px) {
+  main{
+    width: 100%;
+    /* HEADER */
+    header{
+      width: 100%; position: relative;
+      ul{ right: initial; }
+      ul, nav{ float: none; padding-bottom: 20px; }
+      nav{
+        a{ 
+          &.s_fullscreen{ display: none; }
+        }
+        &:before{
+          margin: 0 auto 10px !important;
+        };
+        &.s_language{ right: 267px; }
+        &.s_menu{ right: 4px; }
+        &.s_navg{ right: 70px; }
+      }
+    }
+    /* SECTIONS CONTENTS */
+    section.carrossel{
+      margin-top: 0 !important;
+    }
+    section.highlights ul li.hg_04, section.pilares ul li.pl_04, section.comoInvestir ul li.ci_04{ margin-right: 4px; }
+    section.passoAPasso > div dl:last-child{ margin-right: 9.5px; }
+    section.time span{ overflow:initial; height: initial; }
+    /* FOOTER */
+    footer{
+      padding-bottom: 33px;
+      .socials{ padding: 48px 44px 0; text-align: center; }
+      nav, address{ display: block; text-align: center; }
+      address{ padding: 48px 47px 29px; }
+      nav{
+        margin-top: 0; width: auto; padding: 10px;
+        a{ display: inline-block; margin:5px 10px; }
+      }
+      >p{
+        margin-bottom: -33px;
+      }
+    }
+    /*******************************
+                INICIO
+    *******************************/
+    &.inicial ul li a{ display: inline-block !important; }
+    /*******************************
+                INTERNALS
+    *******************************/    
+    &.internal{
+      header{
+        width: 100%;
+      }
+      &#ser-brain{
+        section{
+          &.featured{
+            img{  width: 100%; }
+          }
+          &.diferencial ul{
+            li{
+              *:not(p){ position: relative !important; left: 0; width: 100%; }
+              &:before{ display: none; }
+              h4{ min-height: 134px;  }
+              img{ width: 80%; margin:0 auto; }
+              &:nth-child(2){
+                width: 100%; left:0; top:12.5%;
+                span{
+                  left:0; top:2.8%;
+                }
+              }
+              &:hover  {
+                h4, img { opacity: 1; }
+              }
+            }
+          }
+        }
+      }
+      &#pilares{
+        section{
+          &.pilares-info article ul li{
+            margin-bottom: 12px; width: 32%; overflow: hidden;
+            h4{ font-size: 3.1em; }
+            div{
+              p{ font-size: 215% !important; }
+            }
+            &:last-child{
+              div p{ font-size: 165% !important; }
+            }
+          }
+          &.conheca{
+            article{
+              ul{
+                li{
+                  margin: 0;
+                  &:nth-child(2n+2){ margin: 0 0 12px 9px !important; }
+                  &:nth-child(3n+3){ margin: 0; }
+                }
+              }
+            }
+          }
+        }
+      }
+      &#como-investir{
+        section{
+          &.featured{
+            img{  width: 100%; }
+          }
+          &.porque{
+            width: 100%; left: 0;
+          }
+        }
+      }
+      &#time{
+        > div{
+          /*padding-top: 25px !important;*/
+          h2{ line-height: 47px; }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 890px) {
+  main{
+    header{
+      &:not(.minus){
+        position: relative; box-shadow: 0 0 20px #888; 
+        ul{ 
+          text-align: center; width: 100%; left: initial; right: initial; position: relative; 
+          li{ margin:0 12px;  }
+        }
+        nav{ 
+          text-align: center; width: 100%; position: relative; right: initial; top: initial; 
+          a{ margin:0 20px 10px; }
+          &.s_language, &.s_menu, &.s_acesso{
+            position: absolute; right: initial; top: 75px; left: 0;  background: #fff; padding-bottom: 0;
+            a{ width: 100%;  margin:0; }
+          }
+        }
+        h1{ 
+          padding-top: 7px; margin-top: 0;
+          a{ width: 207px; margin: 0 calc(~'50% - 103px'); }
+        }
+      }
+    }
+    /* SECTIONS CONTENTS */
+    section.infsSerBrain{
+      h2, a{ width: auto; }
+      a p{ padding: 35px 30px 0; }
+    }
+    section.comoInvestir{
+      article{
+      h2, a{ width: auto; }
+      a p{ padding: 35px 12px 0; }}
+    }
+    section.time a{ 
+      top: calc(~"50% - -21px"); left: calc(~"50% - 210px");
+      &:before{ opacity: 0.6; }
+    }
+    section.carrossel{
+      margin-top: -10px !important;
+      > div dl dt{
+        h2{ font-size: 1.7625em; }
+        &:before{ opacity: 0; }
+      }
+    }
+    footer > p span{
+      width: 50%;
+    }
+    &.internal{
+      &:before{ display:none; }
+      &#como-investir{
+        section{
+          &.passos{
+            > nav{ display: none !important;}
+            article{
+              overflow: initial;
+              aside{
+                >div{
+                  .content-info-01, .content-info-02, .content-info-03{ 
+                    > img{ width: 100%; }
+                    height: auto !important; font-size: 120% !important; /*display: block !important;*/ padding: 0 0 0.5em !important; position: relative !important; margin: 1em -2.8em !important; width: calc(~"100% + 5.6em") !important;
+                    p{ padding: 0.5em !important; }
+                    dl{
+                      dt{ padding: 0 1em !important; }
+                      dd{ padding: 0 1em; }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &.porque{
+            dl{ width: 80%; min-height: initial; }
+          }
+        }
+      }
+      &#time{
+        > div{ padding-top: 25px !important; }
+        section{
+          &.quem-e{
+            padding-top: 0; margin-top: -10px;
+            > div{
+              &.team{
+                dl{ 
+                  font-size: 125%; width: calc(~"100% - 1.6em"); 
+                  &:nth-child(2n+2){
+                    margin:0 0.80em 0.80em;
+                  }
+                  dd{
+                    img{ /*width: 50%;*/ }
+                    p{ .f-weight-light; height: auto; }
+                  }
+                }
+              }
+            }
+          }
+          &.ser-brainvest{
+            font-size: 80%;
+            &.downloads{ margin-top: -10px; }
+          }
+        }
+      }
+      &#ser-brain{
+        section{
+          &.featured{ padding: 0; }
+        }
+      }
+      &#pilares{
+        section{
+          &.pilares-info{ padding: 0; margin-top: -10px; }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    /*******************************
+                INTERNALS
+    *******************************/    
+    &.internal{
+      &:before{ display:none; }
+      header{
+        /*padding:37px 0;*/  position: relative; box-shadow: 0 0 20px #888;
+        ul, nav{ float: none; text-align: center; padding-bottom: 20px; }
+        ul{
+          margin: 0;
+          li{ margin: 0 12px; }
+        }
+        nav{
+          margin-right: 0 !important; text-align: center !important;
+          a{ /*margin:0 19px !important;*/ }
+          &:before{
+            margin: 0 auto 10px !important;
+          };
+        }
+        h1{ 
+          /*padding-top: 17px; float: none; position: relative; text-align: center;*/ margin-top: 0;
+          a{ /*margin:0 auto; width: 407px;*/ }
+        }
+      }
+      &:before{ height:261px; opacity: 0; .transit; }
+      &#ser-brain{
+        section{
+          &.featured{ padding: 0; }
+          &.diferencial{
+            ul li{
+              width: 100% !important; margin: 0;
+              h4{ width: 100% !important; top: initial !important; left: initial !important; }
+              img{ display: inline-block; vertical-align: top; width: 70% !important; }
+              p{ font-size: 180% !important; line-height: 1.1em !important; padding: 7%; }
+              &:nth-child(2){
+                z-index: 1000; top: initial;
+                span{
+                  position: relative; top: 0; left:0; line-height: 0
+                }
+              }
+              &:hover  {
+                h4, img { opacity: 1; }
+              }
+            }
+          }
+        }
+      }
+      &#pilares{
+        section{
+          &.pilares-info{
+            padding-top: 0; 
+            article{
+              h2{ font-size: 4em; }
+              ul{
+                li{
+                  display: block; width: auto; margin: 0 0 12px;
+                  h4{ 
+                    padding: 30px 0; margin: 0; 
+                  }
+                  img{ display: none; }
+                  div{ opacity: 1; margin: -10px 0 50px; height: auto; }
+                  &:nth-child(2) p span:nth-child(1){
+                    padding: 0 0 4%;
+                  }
+                  &:hover{
+                    h4{ opacity: 1; }
+                  }
+                }
+              }
+            }
+          }
+          &.conheca{
+            article{
+              h2{ font-size: 360%; line-height: 100%; padding: 3% 3% 4%; }
+              ul{
+                li{
+                  &:before{ display:none; }
+                  width: 90%; margin:2px auto 6px !important; 
+                  h4{ margin: 0; padding-top: 3%; }
+                  img{ display: none; }
+                  div{ opacity: 1; font-size: 80%; margin: 0 0; height: auto; padding: 1% 5% 5%; }
+                  &:nth-child(2n+2){ margin:2px auto 6px !important; }
+                  &:nth-child(3n+3){ margin:2px auto 6px !important; }
+                }
+              }
+            }
+          }
+        }
+      }
+      &#como-investir{
+        section{
+          &.passos{
+            > nav{ display: none !important;}
+            article{
+              display: block !important; border-bottom: 1.5em solid #fff; height: auto;
+              dl{ font-size: 80%; }
+              aside{font-size: 90%;}
+            }
+          }
+          &.porque{
+            dl{ width: 80%; }
+          }
+        }
+      }
+      &#time{
+        section{
+          &.quem-e{
+            padding: 0;
+            h2{ font-size: 3em; padding: 1em !important; }
+            article{
+              h3{ display: block; width: auto; }
+              p{ display: block; width: auto; padding: 0 1em 1em; }
+            }
+            > div{
+              &.team{
+                dl{ 
+                  dt{ position: relative; background: #938a7b; padding: 16px 0; margin-bottom: -1px; }
+                  dd{
+                    img{ display: block; margin: 0 auto; }
+                    p{ display: block; width: auto; margin: 0; padding: 0.9em;}
+                  }
+                }
+              }
+            }
+          }
+          &.ser-brainvest{
+            font-size: 75%;
+          }
+        }
+      }
+      > nav a{
+        display: none;
+        &:first-child, &:last-child {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) { 
+  main {
+    padding-top: 78px;
+    header{
+      padding: 10px; background: #fff; position: fixed !important;
+      ul{ 
+        display: none; width: 50% !important; right: 0 !important; position: absolute !important; text-align: right !important;
+        li{}
+      }
+      nav{
+        /*&:before{ margin: 0 27px 10px !important; float: right; }*/
+        &.menu{ position: absolute; right: 0; top: 0; width: initial; padding: 0 10px 0 0; }
+        &:not(.menu){ top: 63px !important; padding-bottom: 10px !important; }
+        a{
+          clear: both;
+          &.s_language{ 
+            font-size: 0; padding: 21px 10px; margin: 0;
+            &:before{
+              content: "\f1ab"; font: normal normal normal 25px/1 FontAwesome;
+            }
+          }
+          &.s_acesso{ 
+            font-size: 0; padding: 21px 10px; margin: 0;
+            &:before{
+              content: "\f023"; font: normal normal normal 25px/1 FontAwesome;
+            }
+          }
+          &.s_menu{
+            font-size: 0; padding: 21px 10px; margin: 0;
+            &:before{
+              content: "\f03a"; font: normal normal normal 25px/1 FontAwesome;
+            }
+          }
+        }
+      }
+      h1{ 
+        padding-top: 0 !important;
+        a{ margin:0 !important; width: 150px !important; }
+      }
+    }
+    section.carrossel{
+      > div dl dt h2{ font-size: 132%; }
+      p{ font-size: 201%; padding: 20px 15% 0; }
+      a{ margin: 23px auto; }
+    }
+    section.highlights ul{
+      li{ 
+        display: block; margin: 0 10px 14px; min-height: initial; width: calc(~"100% - 20px"); text-align: left;
+        a{
+          &:hover{ 
+            color: #FFF !important;
+            img{ opacity: 1; margin:0 -1px; width: 30%;  }
+          }
+          img{ width: 30%; float: left; margin-right: -1px;  }
+          h3, p{ padding: 10px !important; float: left; width: calc(~"70% - 20px"); }
+        }
+      }
+    }
+    section.infsSerBrain, section.comoInvestir article, section.time{ 
+      font-size: 80%;
+      strong{
+        font-size: 130% !important;
+      }
+    }
+    section.infsSerBrain{
+      margin-top: 0;
+    }
+    section.comoInvestir{
+      padding: 30px 0 0 0;
+    }
+    section.passoAPasso{
+      padding: 20px 0 0 0;
+      > div dl{
+        width: auto; margin: 0 9.5px 6px;
+        dt{ padding: .5em 0.5em; }
+      }
+    }
+    section.pilares{ 
+      font-size: 80%; padding-top: 28px;
+      ul{
+        li{
+          &:extend(main section.highlights ul li);
+          a{
+            img{ &:extend(main section.highlights ul li a img); }
+            strong{ &:extend(main section.highlights ul li a h3); }
+          }
+        }
+      }
+    }
+    footer{ 
+      margin-top: 0; 
+      h2{ width: 67%; }
+    }
+  /*******************************
+              INICIO
+  *******************************/
+    &.inicial{
+    img{ width:270px; top: calc(~"50% - 93px"); left: calc(~"50% - 135px"); }
+      ul{ top: 50%; }
+    }
+    /*******************************
+                INTERNALS
+    *******************************/ 
+    &.internal{
+      &#ser-brain{
+        section{
+          &.diferencial{
+            h3{ font-size: 3.19em }
+            ul li{
+              width: 100% !important;
+              h4{ width: 100% !important; top: initial !important; left: initial !important; }
+              img{ display: inline-block; vertical-align: top; width: 70% !important; }
+              p{ font-size: 180% !important; line-height: 1.1em !important; padding: 7%; }
+              &:nth-child(2){
+                z-index: 1000;
+                span{
+                  position: relative; top: -6px; left:0; line-height: 0
+                }
+              }
+              &:hover  {
+                h4, img { opacity: 1; }
+              }
+            }
+          }
+          &.featured {
+            h2{ font-size: 169%; line-height: 1.18em; }
+            h3{ font-size: 201%; padding: 20px 15% 0; line-height: 1.18em; margin: 0; }
+            a{ margin: 23px auto 35px !important; }
+            article{ 
+              font-size: 80%; 
+              p{ 
+                letter-spacing: -0.03em; font-size: 1.6875em; 
+                strong{ font-size: 130% !important; font-weight: normal; letter-spacing: -0.01em; display: inline-block; }
+              }
+            }
+          }
+        }
+      }
+      &#pilares{
+        section{
+          &.pilares-info{
+            article{
+              h2{ font-size: 3.19em; line-height: 100%; }
+              ul li{ font-size: 80%; }
+            }
+          }
+          &.conheca{
+            article{
+              h2{ font-size: 3.19em; }
+            }
+          }
+        }
+      }
+      &#como-investir{
+        section{
+          &.porque{
+            h2{ &:extend(main.internal#ser-brain section.diferencial h3); line-height: 0.9em; }
+            dl{ width: 80%; }
+          }
+          &.passos{
+            > nav{ display: none !important;}
+            article{
+              display: block !important; border-bottom: 1.5em solid #fff; height: auto;
+              dl{ 
+                font-size: 80%; display: block; width: 100%;
+                dt{
+                  &:after, &:before{ padding:0; }
+                }
+                dd{ padding: 2em; }
+              }
+              aside{font-size: 90%; width: calc(~"100% - 2em"); margin: 0 1em 1em; padding: 0 !important; }
+              &.passo-05 aside > div:last-child img{ width: 100%; margin:0; }
+            }
+          }
+        }
+      }
+      &#time{
+        section{
+          &.ser-brainvest{ 
+            font-size: 52%;
+            ul{
+              li{ margin: 0 0.7em; font-size: 122%; }
+            }
+          }
+          &.quem-e{ font-size: 80%; }
+        }
+        > div{
+          h2{ font-size: 320%; }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  main {
+    header{
+      ul li{ display: block; margin-bottom: 10px; }
+      nav{
+        &:not(.minus){
+          h1{ margin-top: -10px }
+          nav:not(.menu){
+            a{margin:0; }
+          }
+        }
+      }
+
+      h1 a{ /*width: 80% !important;*/ }
+    }
+    section.highlights ul{
+      li{ background: none !important; }
+    }
+    section.carrossel{
+      > div dl dt{
+        &:before{ opacity: 0; } 
+      }
+    }
+    section.time a{ width: 90%; left: 5%; }
+    footer{
+      h2{
+        &:extend(main header h1 a);
+      }
+      >p{
+        span{ width: 90%; }
+      }
+    }
+    /*******************************
+                INTERNALS
+    *******************************/    
+    &.internal{
+      > nav a{
+        &:first-child, &:last-child { font-size: 100%; line-height: 16px; }
+        &:last-child {
+          &:before{}
+        }
+      }
+      &#como-investir{
+        section{
+          &.passos{
+            article{
+              dl{ 
+                dd{ 
+                  h3{ font-size: 2.5em !important; .f-weight-bold; }
+                  p{
+                    font-size: 1.8em;
+                    strong{ .f-weight-light; font-size: 1em; }
+                  }
+                }
+              }
+            }
+          }
+          &.porque{
+            h2{
+              font-size: 2.7em;
+            }
+          }
+        }
+      }
+      &#time{
+        section{
+          &.ser-brainvest{
+            ul{
+              li{
+                font-size: 108%;
+                p{ }
+              }
+            }
+            > p{ padding: 0.9em 1em 0.65em; }
+          }
+          &.quem-e{
+            > div{
+              &.team{
+                dl{ 
+                  dd{
+                    img{ width: 50%; }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  main {
+    /*******************************
+                INTERNALS
+    *******************************/    
+    &.internal{
+      &#time{
+        section{
+          &.ser-brainvest{
+            ul{
+              li{
+                font-size: 83%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
