@@ -19,7 +19,7 @@ abstract class AutenticadorBrainvest {
     public abstract function logar($login, $password);
     public abstract function esta_logado();
     public abstract function pegar_usuario();
-    public abstract function expulsar();
+    public abstract function expulsar($d);
 }
 
 class AutenticadorEmBanco extends AutenticadorBrainvest {
@@ -29,13 +29,15 @@ class AutenticadorEmBanco extends AutenticadorBrainvest {
       return $sess->existe('usuario');
     }
  
-    public function expulsar() {
-      header('location: login.php');
+    public function expulsar($d) {
+      $_d = (isset($d) && !empty($d))?'?d='.$d:'';      
+      header('location: login.php'.$_d);
     }
  
     public function logar($login, $password) {
       //Estabelece conexão com o Servidor
-      $conn = mysql_connect('brainvestfiles.db.2054282.hostedresource.com','brainvestfiles', 'Kellows@Rafael4527') or die ('Falha ao conectar no Servidor!');
+      //$conn = mysql_connect('brainvestfiles.db.2054282.hostedresource.com','brainvestfiles', 'Kellows@Rafael4527') or die ('Falha ao conectar no Servidor!');
+      $conn = mysql_connect('127.0.0.1','root', '') or die ('Falha ao conectar no Servidor!');
      
       //Define o Banco de Dados
       mysql_select_db('brainvestfiles', $conn);

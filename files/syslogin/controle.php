@@ -17,7 +17,11 @@ switch($_REQUEST["submit"]) {
         # efetua o processo de autenticação
         if ($aut->logar($_REQUEST["login"], $_REQUEST["password"])) {
             # redireciona o usuário para dentro do sistema
-            header('location: ../home.php');
+            if( isset($_REQUEST["download"]) && !empty($_REQUEST["download"]) ){
+                header('location: ../usr_downloads.php');
+            }else{
+                header('location: ../home.php');
+            }
         }
         else {
             # envia o usuário de volta para 

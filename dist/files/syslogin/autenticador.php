@@ -19,7 +19,7 @@ abstract class AutenticadorBrainvest {
     public abstract function logar($login, $password);
     public abstract function esta_logado();
     public abstract function pegar_usuario();
-    public abstract function expulsar();
+    public abstract function expulsar($d);
 }
 
 class AutenticadorEmBanco extends AutenticadorBrainvest {
@@ -29,8 +29,9 @@ class AutenticadorEmBanco extends AutenticadorBrainvest {
       return $sess->existe('usuario');
     }
  
-    public function expulsar() {
-      header('location: login.php');
+    public function expulsar($d) {
+      $_d = (isset($d) && !empty($d))?'?d='.$d:'';      
+      header('location: login.php'.$_d);
     }
  
     public function logar($login, $password) {

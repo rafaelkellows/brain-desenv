@@ -80,8 +80,17 @@
         });
 
       }
+      function btnsActions(){
+        var _btns = $('form span.btns a.fa');
+        _btns.click(function(){
+          if( $(this).hasClass('fa-trash') ){
+            $(this).closest('form').find('input[name=nvg]').val('delete_user');
+          }
+          $(this).closest('form').submit();
+        });
+      }
       $(document).ready(function(){
-        Password(),LoginName();
+        Password(),LoginName(),btnsActions();
       })
     </script>
 
@@ -131,7 +140,15 @@
           <label>Status:</label>
           <input type="radio" id="usr_status" <?php if( $row['active'] == 0 ) print 'checked="checked" '; ?> name="status" value="0" /><label for="usr_status">Inativo</label>
           <input type="radio" id="adm_status" <?php if( $row['active'] == 1 ) print 'checked="checked" '; ?> name="status" value="1" /><label for="adm_status">Ativo</label>
-          <input type="submit" name="" value="OK" />
+          <!--input type="submit" name="" value="OK" /-->
+          <span class="btns">
+            <a class="fa fa-check" href="javascript:void(0);" title="OK">OK</a>
+            <?php 
+              if( isset($_GET["uid"]) ){
+                echo '<a class="fa fa-trash" href="javascript:void(0);" title="Excluir">Excluir</a>';
+              }
+            ?>
+          </span>
         </fieldset>
       </form>
     </main>

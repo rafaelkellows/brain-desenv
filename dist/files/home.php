@@ -46,7 +46,7 @@
           <a href="usr_list.php" title="Lista de Usuários"><span><i class="fa fa-list" aria-hidden="true"></i><font>Usuários</font></span></a>
           <a href="usr_create.php" title="Cadastrar Usuário"><span><i class="fa fa-user-plus" aria-hidden="true"></i><font>Cadastrar</font></span></a>
           <a href="usr_upload.php" title="Enviar Arquivo"><span><i class="fa fa-upload" aria-hidden="true"></i><font>Enviar</font></span></a>
-          <a href="javascript:void(0);" title="Tela de Download"><span><i class="fa fa-download" aria-hidden="true"></i><font>Downloads</font></span></a>
+          <a href="usr_downloads.php" title="Arquivos Enviados"><span><i class="fa fa-download" aria-hidden="true"></i><font>Downloads</font></span></a>
         </nav>
       </section>
         

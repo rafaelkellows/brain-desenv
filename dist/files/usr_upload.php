@@ -106,7 +106,7 @@
           console.log(data);
           $("div.firstStep > *").not('#output').hide().closest('div').removeClass('active');
           _ipt_file.remove();
-          //$("div.secondStep").addClass('active').fadeIn();
+          $("div.secondStep").addClass('active').fadeIn();
         }
         $('#MyUploadForm').submit(function(e) {
           //e.preventDefault();
@@ -141,8 +141,11 @@
           }
         });
         $('#MyUploadForm input[name=all_users]').on('click',function(){
-          $(this).prop('checked',true);
-          $('#MyUploadForm input[name=users_emails]').prop('checked',true);
+          if( $(this).is(':checked') ){
+            $('#MyUploadForm input[type=checkbox]').prop('checked',true);
+          }else{
+            $('#MyUploadForm input[type=checkbox]').prop('checked',false);
+          }
         });
       })
     </script>
@@ -166,6 +169,8 @@
           <legend><i class="fa fa-upload" aria-hidden="true"></i> Enviar Arquivo</legend>
           <!--a href="javascript:window.history.back();" title="voltar"><i class="fa fa-reply-all" aria-hidden="true"></i></a-->
           <a href="home.php" title="voltar"><i class="fa fa-reply-all" aria-hidden="true"></i></a>
+          
+          <?php if (!isset($_REQUEST["msg"])) { ?>
           <input type="hidden" name="uid" value="<?php print $row["id_user"]; ?>" />
           <p class="msg error">Aqui vem a msg</p>
           <div class="firstStep active">
@@ -216,6 +221,9 @@
             ?>
             <input type="submit" name="ok" value="GO" />
           </div>
+          <?php } else { ?>
+          <div id="output"><span class="ok">Links para Download <br>enviados com sucesso!</span></div>
+          <?php } ?>
         </fieldset>
       </form>
     </main>

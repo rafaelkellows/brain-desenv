@@ -1,6 +1,7 @@
 <?php 
   session_start();
   session_destroy();
+  $_d = (isset($_REQUEST["d"]) && !empty($_REQUEST["d"])) ? $_REQUEST["d"] : '' ; //down
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -31,6 +32,7 @@
       <img src="../images/logo-brainvest-inicio.png" />
       <form class="login" action="syslogin/controle.php" method="post" target="_self">
         <fieldset>
+          <input type="hidden" name="download" value="<?php echo $_d; ?>" />
           <legend>Área de Acesso</legend>
           <label>Digite seu usuário/login:</label>
           <input type="text" placeholder="login" name="login" value="" />
