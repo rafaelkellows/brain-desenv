@@ -37,6 +37,7 @@ class AutenticadorEmBanco extends AutenticadorBrainvest {
     public function logar($login, $password) {
       //Estabelece conexão com o Servidor
       $conn = mysql_connect('brainvestfiles.db.2054282.hostedresource.com','brainvestfiles', 'Kellows@Rafael4527') or die ('Falha ao conectar no Servidor!');
+      //$conn = mysql_connect('127.0.0.1','root', '') or die ('Falha ao conectar no Servidor!');
      
       //Define o Banco de Dados
       mysql_select_db('brainvestfiles', $conn);

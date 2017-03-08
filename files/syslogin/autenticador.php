@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set("America/Araguaina");
 abstract class AutenticadorBrainvest {
  
     private static $instancia = null;

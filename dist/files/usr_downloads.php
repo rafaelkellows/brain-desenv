@@ -44,7 +44,7 @@
       ?>
       <form class="login" action="usr_upload_action.php" method="post" enctype="multipart/form-data" id="MyUploadForm">
         <fieldset>
-          <legend><i class="fa fa-upload" aria-hidden="true"></i> Enviar Arquivo</legend>
+          <legend><i class="fa fa-download" aria-hidden="true"></i> Downloads</legend>
           <!--a href="javascript:window.history.back();" title="voltar"><i class="fa fa-reply-all" aria-hidden="true"></i></a-->
           <a href="home.php" title="voltar"><i class="fa fa-reply-all" aria-hidden="true"></i></a>
           <?php
@@ -53,11 +53,10 @@
               echo '<ul class="downs">';
               while ( $row = mysql_fetch_array($oSlct) ) {
                 echo '<li>';
-                echo '  <a href="'.$row['short_link'].'" target="_blank"><em>4</em><span>'.$row['title'].'</span><i title="" class="fa fa-download" aria-hidden="true"></i></a>';
+                echo '  <a href="'.$row['short_link'].'" target="_blank"><em>'.$row['id_link'].'</em><span>'.$row['title'].'</span><i title="" class="fa fa-download" aria-hidden="true"></i></a>';
                 $usrSlct = $oConn->SQLselector("name","tbl_users",'"'.$row['user_id'].'"',"");
                 $urow = mysql_fetch_array($usrSlct);
-                echo '  <span>Upload by: '.$urow['name'].'</span>';
-                echo '  <span>Date: '.$row['created'].'</span>';
+                echo '  <span>By '.$urow['name'].' <br>At '.$row['created'].'</span>';
                 echo '</li>';
               }
               echo '</ul>';

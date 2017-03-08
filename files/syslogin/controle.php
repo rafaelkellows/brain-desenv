@@ -1,5 +1,5 @@
 <?php
-session_start();
+error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 require_once 'usuario.php';
 require_once 'autenticador.php';
 require_once 'sessao.php';
@@ -18,7 +18,9 @@ switch($_REQUEST["submit"]) {
         if ($aut->logar($_REQUEST["login"], $_REQUEST["password"])) {
             # redireciona o usuário para dentro do sistema
             if( isset($_REQUEST["download"]) && !empty($_REQUEST["download"]) ){
-                header('location: ../usr_downloads.php');
+                //header('location: ../usr_downloads.php');
+                echo 'Downloads';
+                return;
             }else{
                 header('location: ../home.php');
             }

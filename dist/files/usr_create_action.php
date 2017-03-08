@@ -19,11 +19,11 @@
       header('location: usr_list.php');
 
     }else{
+
       switch ($nvg) {
+                
         case "new_user":
-        
           $all = $oConn->SQLselector("*","tbl_users","email='".$email."'");
-          
           if( $all){
             $all = $oConn->SQLinserter("tbl_users","name,login,email,password,type,created,visited,active","'$name','$login','$email','$password','$type',now(),now(),'$status'");
             if($all){
@@ -36,20 +36,18 @@
             header('location: usr_create.php?&msg=4&name='.$name.'&login='.$login.'&email='.$email.'&password='.md5($password).'&type='.$type.'&status='.$status);
           }
           break;
-
-        case "delete_user":
           
-          $all = $oConn->SQLdeleter("tbl_users","id='".$id."'");
-
+        case "delete_user":
+          $all = $oConn->SQLdeleter("tbl_users","id_user='".$id."'");
           if($all){
-            header('location: ../page.php?nvg=user&msg=3');
+            header('location: usr_list.php?msg=1');
           }
           else{
-            header('location: ../page.php?nvg=user&msg=0');
+            header('location: usr_list.php?msg=2');
           }
-
         default:
           break;
       }
+
     }
 ?>

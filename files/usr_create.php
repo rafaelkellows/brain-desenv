@@ -110,7 +110,7 @@
           $titleValue = '<i class="fa fa-user" aria-hidden="true"></i> Alterar ';
           $pswdComplement = '';
         }else{
-          $row = Array ( 'id_user' => 0, 'name' => '','email' => '', 'login' => '', 'password' => '', 'type' => '', 'active' => '' );
+          $row = Array ( 'id_user' => 0, 'name' => '','email' => '', 'login' => '', 'password' => '', 'type' => -1, 'active' => '' );
           $hiddenVal = 'new_user';
           $titleValue = '<i class="fa fa-user-plus" aria-hidden="true"></i> Cadastrar ';
           $pswdComplement = ' <small>(gerada automaticamente)</small>';
@@ -128,23 +128,35 @@
           <label>Digite o usuário/login:</label>
           <input type="text" placeholder="login" name="login" value="<?php print $row["login"]; ?>" />
           <label>Digite o e-mail:</label>
-          <input type="text" placeholder="email" name="email" value="<?php print $row["email"]; ?>" />
+          <input type="text" placeholder="email" <?php if( $row['type'] == 0  ) print 'readonly="readonly"'; ?> name="email" value="<?php print $row["email"]; $usuario->getType(); ?>" />
           <label>Senha<?php print $pswdComplement; ?>:</label>
-          <input type="text" name="password" readonly="readonly" value="<?php print $row["password"]; ?>" />
+          <input type="text" name="password" <?php if( $row['type'] != 1  ) print 'readonly="readonly"'; ?> value="<?php print $row["password"]; ?>" />
           <!--label>Enviar senha para o usuário?</label>
           <input type="radio" id="usr_delivery" checked="checked" name="delivery" value="0" /><label for="usr_delivery">Não</label>
           <input type="radio" id="adm_delivery" name="delivery" value="1" /><label for="adm_delivery">Sim</label-->
-          <label>Tipo de Usuário:</label>
-          <input type="radio" id="usr_type" <?php if( $row['type'] == 0 ) print 'checked="checked" '; ?> name="type" value="0" /><label for="usr_type">Usuário</label>
+          <label>Tipo de Acesso: <?php if( $row['type'] == 0  ) print '<small>Usuário</small>'; ?></label>
+          <?php 
+            if( $row['type'] != 0 ){ 
+          ?>
+          <input type="radio" id="usr_type" <?php if( $row['type'] != 1 ) print 'checked="checked" '; ?> name="type" value="0" /><label for="usr_type">Usuário</label>
           <input type="radio" id="adm_type" <?php if( $row['type'] == 1 ) print 'checked="checked" '; ?>  name="type" value="1" /><label for="adm_type">Administrador</label>
-          <label>Status:</label>
-          <input type="radio" id="usr_status" <?php if( $row['active'] == 0 ) print 'checked="checked" '; ?> name="status" value="0" /><label for="usr_status">Inativo</label>
+          <?php 
+            }
+          ?>
+          <label>Status: <?php ( $row['type'] == 0)  ?  ( ( $row['active'] == 0 ) ? print '<small>Inativo</small>' : print '<small>Ativo</small>'  ) : ''; ?></label>
+          <?php 
+            if( $row['type'] != 0 ){ 
+          ?>
+          <input type="radio" id="usr_status" <?php if( $row['active'] != 1 ) print 'checked="checked" '; ?> name="status" value="0" /><label for="usr_status">Inativo</label>
           <input type="radio" id="adm_status" <?php if( $row['active'] == 1 ) print 'checked="checked" '; ?> name="status" value="1" /><label for="adm_status">Ativo</label>
+          <?php 
+            }
+          ?>
           <!--input type="submit" name="" value="OK" /-->
           <span class="btns">
             <a class="fa fa-check" href="javascript:void(0);" title="OK">OK</a>
             <?php 
-              if( isset($_GET["uid"]) ){
+              if( isset($_GET["uid"]) && $row['type'] == 1 ){
                 echo '<a class="fa fa-trash" href="javascript:void(0);" title="Excluir">Excluir</a>';
               }
             ?>
