@@ -19,20 +19,21 @@ $(function(){
 
 	        	//Click Event
 	        	$('main.inicial ul li a, main header nav.s_language a').click(function(e){
-					$.cookie("language", $(this).attr('lang'), {expires:15, path:"/"});
-		        	window.location.href = 'http://'+_host+$.cookie('language') +_path;
+					$.cookie("lang", $(this).attr('lang'), {expires:15, path:"/"});
+		        	window.location.href = 'http://'+_host+$.cookie('lang') +_path;
 	        	});
 				//Redirect Event
-		        if( $.cookie('language') != undefined && $.cookie('language') != "undefined" && $('main.inicial').length > 0){
+		        if( $.cookie('lang') != undefined && $.cookie('lang') != "undefined" && $('main.inicial').length > 0){
 		        	//console.log('asdas');
-		        	window.location.href = 'http://'+_host+$.cookie('language') +'/';
+		        	window.location.href = 'http://'+_host+$.cookie('lang') +'/';
 			        //window.location.href = 'http://'+_host+'pt_br/';
-					//$.cookie("language", 'pt_br', {expires:15, path:"/"});
+					//$.cookie("lang", 'pt_br', {expires:15, path:"/"});
 		        }
 	        },
 	        loadJson : function () {
+	        	//if(!$.cookie("lang")) return;
 				$.ajax({
-					url : 'js/'+$.cookie("language")+'.js',
+					url : '../js/'+$.cookie("lang")+'.js',
 					dataType : 'json',
 					success : function(json) { 
 						console.log('Foi ' + json[0].home.highlight);
@@ -159,6 +160,7 @@ $(function(){
 	        },
 	        carrossel: function() {
 				var owl = $("section.carrossel > div"); 
+				if(!owl.length) return;
 				owl.owlCarousel({
 					autoplay:true,
 					smartSpeed: 600,
