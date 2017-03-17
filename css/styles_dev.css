@@ -2595,6 +2595,22 @@ main.files form.login fieldset ul.downs li a em {
 main.files form.login fieldset ul.downs li a span {
   width: 235px !important;
 }
+main.files form.login fieldset ul.downs li a i {
+  vertical-align: top !important;
+  margin-top: 5px;
+}
+main.files form.login fieldset ul.downs li a.regenerate {
+  background: #2196f3;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  border: 1px solid #2196f3;
+}
+main.files form.login fieldset ul.downs li a.regenerate:hover {
+  background: #fff;
+  margin: 10px 0 5px;
+  border: 1px solid #2196f3;
+}
 main.files form.login fieldset ul.downs li:last-child {
   border-bottom: none;
 }
@@ -2603,6 +2619,7 @@ main.files form.login fieldset ul.downs li > span {
   padding-left: 30px;
   font-size: 16px;
   line-height: 16px;
+  padding-top: 5px;
   /*display: none;*/
 }
 main.files form.login label {

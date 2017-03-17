@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set("America/Araguaina");
 abstract class AutenticadorBrainvest {
  
     private static $instancia = null;
@@ -50,10 +51,9 @@ class AutenticadorEmBanco extends AutenticadorBrainvest {
       $strUpdate = "UPDATE tbl_users SET visited = now() WHERE tbl_users.login = '{$login}' AND tbl_users.password = '{$password}'";
 
       $result = mysql_query($strSelect);
+      $dados = mysql_fetch_array($result);
 
-      if ($result) {
-
-        $dados = mysql_fetch_array($result);
+      if ($dados[0]) {
 
         $usuario = new UsuarioBrainvest();
         $usuario->setId($dados['id_user']);
@@ -68,10 +68,9 @@ class AutenticadorEmBanco extends AutenticadorBrainvest {
         $sess->set('usuario', $usuario);
         mysql_query($strUpdate);
         return true;
-
       }
       else {
-          return false;
+        return false;
       }
  
     }

@@ -8,8 +8,8 @@ class Conn {
     public function SQLselector($identifiers,$table,$conditions,$orderby) {
 
         // Estabelece conexão com o Servidor
-        //$pdo = mysql_connect('brainvestfiles.db.2054282.hostedresource.com','brainvestfiles', 'Kellows@Rafael4527') or die ('Falha ao conectar no Servidor!');
-        $pdo = mysql_connect('127.0.0.1','root', '') or die ('Falha ao conectar no Servidor!');
+        $pdo = mysql_connect('brainvestfiles.db.2054282.hostedresource.com','brainvestfiles', 'Kellows@Rafael4527') or die ('Falha ao conectar no Servidor!');
+        //$pdo = mysql_connect('127.0.0.1','root', '') or die ('Falha ao conectar no Servidor!');
         // Define o Banco de Dados
         mysql_select_db('brainvestfiles', $pdo);
         
@@ -23,8 +23,8 @@ class Conn {
     }
     public function SQLupdater($table,$identifiers,$conditions){
         // Estabelece conexão com o Servidor
-        //$pdo = mysql_connect('brainvestfiles.db.2054282.hostedresource.com','brainvestfiles', 'Kellows@Rafael4527') or die ('Falha ao conectar no Servidor!');
-        $pdo = mysql_connect('127.0.0.1','root', '') or die ('Falha ao conectar no Servidor!');
+        $pdo = mysql_connect('brainvestfiles.db.2054282.hostedresource.com','brainvestfiles', 'Kellows@Rafael4527') or die ('Falha ao conectar no Servidor!');
+        //$pdo = mysql_connect('127.0.0.1','root', '') or die ('Falha ao conectar no Servidor!');
        
         // Define o Banco de Dados
         mysql_select_db('brainvestfiles', $pdo);
@@ -37,8 +37,8 @@ class Conn {
     }
     public function SQLinserter($table,$identifiers,$values){
         // Estabelece conexão com o Servidor
-        //$pdo = mysql_connect('brainvestfiles.db.2054282.hostedresource.com','brainvestfiles', 'Kellows@Rafael4527') or die ('Falha ao conectar no Servidor!');
-        $pdo = mysql_connect('127.0.0.1','root', '') or die ('Falha ao conectar no Servidor!');
+        $pdo = mysql_connect('brainvestfiles.db.2054282.hostedresource.com','brainvestfiles', 'Kellows@Rafael4527') or die ('Falha ao conectar no Servidor!');
+        //$pdo = mysql_connect('127.0.0.1','root', '') or die ('Falha ao conectar no Servidor!');
        
         // Define o Banco de Dados
         mysql_select_db('brainvestfiles', $pdo);
@@ -51,8 +51,8 @@ class Conn {
     }
     public function SQLdeleter($table,$conditions){
         // Estabelece conexão com o Servidor
-        //$pdo = mysql_connect('brainvestfiles.db.2054282.hostedresource.com','brainvestfiles', 'Kellows@Rafael4527') or die ('Falha ao conectar no Servidor!');
-        $pdo = mysql_connect('127.0.0.1','root', '') or die ('Falha ao conectar no Servidor!');
+        $pdo = mysql_connect('brainvestfiles.db.2054282.hostedresource.com','brainvestfiles', 'Kellows@Rafael4527') or die ('Falha ao conectar no Servidor!');
+        //$pdo = mysql_connect('127.0.0.1','root', '') or die ('Falha ao conectar no Servidor!');
        
         // Define o Banco de Dados
         mysql_select_db('brainvestfiles', $pdo);

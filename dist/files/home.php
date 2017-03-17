@@ -43,10 +43,21 @@
       <section class="home">
         <h2>Acesso Rápido</h2>
         <nav>
+        <?php
+          if( $usuario->getType() == 1 ){
+        ?>
           <a href="usr_list.php" title="Lista de Usuários"><span><i class="fa fa-list" aria-hidden="true"></i><font>Usuários</font></span></a>
           <a href="usr_create.php" title="Cadastrar Usuário"><span><i class="fa fa-user-plus" aria-hidden="true"></i><font>Cadastrar</font></span></a>
           <a href="usr_upload.php" title="Enviar Arquivo"><span><i class="fa fa-upload" aria-hidden="true"></i><font>Enviar</font></span></a>
           <a href="usr_downloads.php" title="Arquivos Enviados"><span><i class="fa fa-download" aria-hidden="true"></i><font>Downloads</font></span></a>
+        <?php
+          }else{
+        ?>
+          <a href="usr_create.php?nvg=user&uid=<?php print $usuario->getId(); ?>" title="Cadastrar Usuário"><span><i class="fa fa-user" aria-hidden="true"></i><font>Meu Perfil</font></span></a>
+          <a href="usr_downloads.php" title="Arquivos Enviados"><span><i class="fa fa-download" aria-hidden="true"></i><font>Downloads</font></span></a>
+        <?php
+          }
+        ?>
         </nav>
       </section>
         

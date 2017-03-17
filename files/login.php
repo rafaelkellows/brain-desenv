@@ -34,6 +34,13 @@
         <fieldset>
           <input type="hidden" name="download" value="<?php echo $_d; ?>" />
           <legend>Área de Acesso</legend>
+          <?php 
+          if(isset($_REQUEST['msg'])){
+            if($_REQUEST['msg'] ==  0){
+              echo '<p style="display: block;">Dados incorretos. Tente novamente.</p>';
+            }
+          }
+          ?>
           <label>Digite seu usuário/login:</label>
           <input type="text" placeholder="login" name="login" value="" />
           <label>Digite sua senha:</label>

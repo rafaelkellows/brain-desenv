@@ -37,8 +37,8 @@ class AutenticadorEmBanco extends AutenticadorBrainvest {
  
     public function logar($login, $password) {
       //Estabelece conexão com o Servidor
-      //$conn = mysql_connect('brainvestfiles.db.2054282.hostedresource.com','brainvestfiles', 'Kellows@Rafael4527') or die ('Falha ao conectar no Servidor!');
-      $conn = mysql_connect('127.0.0.1','root', '') or die ('Falha ao conectar no Servidor!');
+      $conn = mysql_connect('brainvestfiles.db.2054282.hostedresource.com','brainvestfiles', 'Kellows@Rafael4527') or die ('Falha ao conectar no Servidor!');
+      //$conn = mysql_connect('127.0.0.1','root', '') or die ('Falha ao conectar no Servidor!');
      
       //Define o Banco de Dados
       mysql_select_db('brainvestfiles', $conn);
@@ -51,10 +51,9 @@ class AutenticadorEmBanco extends AutenticadorBrainvest {
       $strUpdate = "UPDATE tbl_users SET visited = now() WHERE tbl_users.login = '{$login}' AND tbl_users.password = '{$password}'";
 
       $result = mysql_query($strSelect);
+      $dados = mysql_fetch_array($result);
 
-      if ($result) {
-
-        $dados = mysql_fetch_array($result);
+      if ($dados[0]) {
 
         $usuario = new UsuarioBrainvest();
         $usuario->setId($dados['id_user']);
@@ -69,10 +68,9 @@ class AutenticadorEmBanco extends AutenticadorBrainvest {
         $sess->set('usuario', $usuario);
         mysql_query($strUpdate);
         return true;
-
       }
       else {
-          return false;
+        return false;
       }
  
     }

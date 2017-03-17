@@ -78,8 +78,8 @@ body:not(.home){
 	display:none; 
 }
 
-/* Página Our Solutions */
-.content .page-content dl dt, .content .page-content dl dd{ 				
+/* START | Página Our Solutions */
+.content .page-content > dl dt, .content .page-content > dl dd{ 				
 	background:#eee; 
 	display:inline-block; 
 	vertical-align:middle;
@@ -88,11 +88,11 @@ body:not(.home){
 	box-sizing: border-box;
 	text-align:center;
 }
-.content .page-content dl dt{
+.content .page-content > dl dt{
 margin:3px 0;
 
 }
-.content .page-content dl dd{ 				
+.content .page-content > dl dd{ 				
 	background:#fff; 
 	width:79%; 
 	box-sizing: border-box;
@@ -140,8 +140,22 @@ margin:0 4%;
 	box-sizing: border-box;
 	margin:4%;
 }
+	/* START | TABLE - VARIA STRUCTURED OPPORTUNITIES */
+	.vsHighlights{ display: inline-block; width: 35%; }
+	.vsHighlights > p{ display: none; }
+	.structuredOpp{ display: inline-block; width: 64%; vertical-align: top; }
+	.structuredOpp *{ font-size: 15px; }
+	.structuredOpp h3{ background: #ee9535; color:#fff; font-size: 18px; font-weight: bold; padding: 3px 6px; margin:0; text-align: center; }
+	.structuredOpp dl { display: inline-block; width: 100%; margin:0; }
+	.structuredOpp dl > *{ display: inline-block; width: 45%; vertical-align: top; margin:0; padding: 5px; }
+	.structuredOpp dl:nth-child(even){ background: #d5d5d5; }
+	.structuredOpp dl:nth-child(odd){ background: #ececec; }
+	.structuredOpp dl dt{ width: 39%; }
+	.structuredOpp dl p{ margin:0; padding: 0; }
+	.structuredOpp dl dd ul{ display: inline-block; vertical-align: top; padding: 0 1.2em; width: 49%; box-sizing: border-box;}
+	/* END | TABLE */
 
-/* */
+/* END | Página Our Solutions */
 
 .home .team{ background:#e7e7e7; }
 .home .team .section-heading, .home .features .section-heading{ color:#90a789; }
@@ -254,7 +268,7 @@ nav.index-navg br{
 .form1 .button-submit{
 	display:block !important;
 }
-.content .page-content dl dt, .content .page-content dl dd{
+.content .page-content > dl dt, .content .page-content > dl dd{
 	width:100%;
 }
 .content .page-content ul.ul-block,
@@ -284,10 +298,9 @@ nav.index-navg br{
 }
 /*******************************/
 @media only screen and (max-width: 800px){
-.page-content .addresses{
-    padding: 0px 12px;
-    width: 46%;
-}
+	.page-content .addresses{  padding: 0px 12px; width: 46%; }
+	.structuredOpp, .vsHighlights{ width: 100%; }
+	.structuredOpp dl > *{ width: 100% !important; display: block; text-align: center; }
 }
 
 

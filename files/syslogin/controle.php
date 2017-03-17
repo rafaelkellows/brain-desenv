@@ -18,8 +18,8 @@ switch($_REQUEST["submit"]) {
         if ($aut->logar($_REQUEST["login"], $_REQUEST["password"])) {
             # redireciona o usuário para dentro do sistema
             if( isset($_REQUEST["download"]) && !empty($_REQUEST["download"]) ){
-                //header('location: ../usr_downloads.php');
-                echo 'Downloads';
+                header('location: ../?d='.$_REQUEST["download"]);
+                session_destroy();
                 return;
             }else{
                 header('location: ../home.php');
@@ -28,7 +28,7 @@ switch($_REQUEST["submit"]) {
         else {
             # envia o usuário de volta para 
             # o form de login
-            header('location: ../login.php?msg=sair');
+            header('location: ../login.php?msg=0');
         }
  
     } break;
@@ -38,7 +38,7 @@ switch($_REQUEST["submit"]) {
         # envia o usuário para fora do sistema
         # o form de login
         session_destroy();
-        header('location: ../login.php?msg=sair');
+        header('location: ../login.php');
  
     } break;
 

@@ -128,9 +128,9 @@
           <label>Digite o usuário/login:</label>
           <input type="text" placeholder="login" name="login" value="<?php print $row["login"]; ?>" />
           <label>Digite o e-mail:</label>
-          <input type="text" placeholder="email" <?php if( $row['type'] == 0  ) print 'readonly="readonly"'; ?> name="email" value="<?php print $row["email"]; $usuario->getType(); ?>" />
+          <input type="text" placeholder="email" <?php if( $row['type'] == 0  ) print 'readonly="readonly"'; ?> name="email" value="<?php print $row["email"]; ?>" />
           <label>Senha<?php print $pswdComplement; ?>:</label>
-          <input type="text" name="password" <?php if( $row['type'] != 1  ) print 'readonly="readonly"'; ?> value="<?php print $row["password"]; ?>" />
+          <input type="text" name="password" <?php if( $usuario->getType() == 1  ) echo 'readonly="readonly"'; ?> value="<?php print $row["password"]; ?>" />
           <!--label>Enviar senha para o usuário?</label>
           <input type="radio" id="usr_delivery" checked="checked" name="delivery" value="0" /><label for="usr_delivery">Não</label>
           <input type="radio" id="adm_delivery" name="delivery" value="1" /><label for="adm_delivery">Sim</label-->
