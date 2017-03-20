@@ -485,12 +485,12 @@ main section.infsSerBrain h2 {
   color: #d9d9cb;
   display: inline-block;
   vertical-align: top;
-  width: calc(22% - 30px);
+  width: calc(37% - 30px);
   padding: 27px 30px 0;
   margin: 0;
 }
 main section.infsSerBrain a {
-  width: 74%;
+  width: 59%;
   display: inline-block;
 }
 main section.infsSerBrain a p {
@@ -618,14 +618,14 @@ main section.comoInvestir article h2 {
   line-height: 3.75rem;
   display: inline-block;
   vertical-align: top;
-  width: calc(28% - 28px);
+  width: calc(35% - 28px);
   font-size: 4.1875em;
   letter-spacing: -2px;
 }
 main section.comoInvestir article a {
   display: inline-block;
   margin: -10px 0 0 19px;
-  width: calc(65%);
+  width: 59%;
   padding-right: 40px;
   box-sizing: border-box;
 }
