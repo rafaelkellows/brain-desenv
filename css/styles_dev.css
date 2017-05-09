@@ -158,12 +158,12 @@ main header * {
 }
 main header ul {
   position: absolute;
-  right: 565px;
-  width: 425px;
+  right: 395px;
+  width: 605px;
 }
 main header ul li {
-  margin: 0 12px 0 0;
-  font-size: 1.1em;
+  margin: 0 10px 0 0;
+  font-size: 0.9em;
   display: inline-block;
 }
 main header ul li a {
@@ -172,6 +172,7 @@ main header ul li a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   display: inline-block;
+  font-size: 1.1em;
 }
 main header ul li a.active {
   color: #f6861f;
@@ -188,7 +189,7 @@ main header nav a {
   transition: all 0.3s;
   font-family: 'ArquitectaBold';
   font-weight: normal;
-  margin: 0 0 0 40px;
+  margin: 0 0 0 30px;
   display: inline-block;
   font-size: 1.1em;
 }
@@ -252,17 +253,17 @@ main header nav.s_acesso a {
 }
 main header nav.s_language {
   /*right: 330px;*/
-  right: 267px;
+  right: 257px;
 }
 main header nav.s_menu {
   /*right: 68px;*/
   right: 4px;
 }
 main header nav.s_navg {
-  right: 70px;
+  right: 60px;
 }
 main header nav.s_acesso {
-  right: 95px;
+  right: 85px;
 }
 main header h1 {
   padding: 47px 0 0 0;
@@ -969,7 +970,7 @@ main footer address {
 }
 main footer address p {
   margin-bottom: 29px;
-  min-width: 218px;
+  min-width: 208px;
   font-size: 1em;
   font-style: normal;
   line-height: 1.1em;
@@ -986,7 +987,7 @@ main footer address p em {
 main footer nav {
   display: inline-block;
   vertical-align: top;
-  margin: -25px 20px 0;
+  margin: -45px 20px 0;
   width: 19%;
 }
 main footer nav a {

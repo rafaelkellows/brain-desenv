@@ -1,0 +1,343 @@
+body, form .wdform-label{
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.6;
+}
+body:not(.home){
+	background:none;
+}
+.slider{ background: #e7e7e7; }
+.slider-slides .slide-content,
+#slb_viewer_wrap .slb_data_content{
+	display:none; 
+}
+.features .feature .feature-icon{
+	display:none;
+}
+.features .feature .feature-title, .services .service .service-title,
+.team .team-member-title{
+	font-weight: bold;
+	margin: 5px 0 8px;
+}
+.testimonials .testimonial-name{
+	font-size: 15px;
+    letter-spacing: -0.02em;
+    padding-top: 5px;
+}
+.testimonials .testimonial-image{
+	margin-bottom: 0;
+}
+.testimonials .row { text-align:center; }
+.testimonials .row .column{
+	float: none; display: inline-block; vertical-align: top;
+}
+/* Página de Contato */
+.page-content .addresses{ 
+	width: 49%; 
+	display:inline-block; 
+	vertical-align:top; 
+	text-align:center;
+}
+.page-content .addresses:first-child{ 
+	border-right:1px solid #e7e7e7; 
+}
+
+.page-content .form1 > *,
+.page-content .form1 > * > *{ 
+	padding:0 !important; margin:0; 
+}
+
+.page-content .form1 input[type=text],
+.page-content .form1 textarea{ 
+	border-color:#e7e7e7; 
+	border-radius:5px !important; 
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif !important;
+	font-size: 1em !important; 
+	padding:15px 8px !important;  
+}
+
+.page-content .form1 textarea{ 
+	padding:8px !important; 
+}
+
+.page-content .form1 .wdform-field{ 			
+	width:auto !important; 
+}
+
+.page-content .form1 .wdform-label-section {
+    float: none !important;
+    vertical-align: top; 
+	text-align:right;
+	padding-right: 20px;
+}
+/* Footer */
+.footer{ padding:35px 0 !important; }
+.footer:before, .subfooter{ 
+	display:none; 
+}
+
+/* START | Página Our Solutions */
+.content .page-content > dl dt, .content .page-content > dl dd{ 				
+	background:#eee; 
+	display:inline-block; 
+	vertical-align:middle;
+	width:20%;
+	padding:8px 5px;
+	box-sizing: border-box;
+	text-align:center;
+}
+.content .page-content > dl dt{
+margin:3px 0;
+
+}
+.content .page-content > dl dd{ 				
+	background:#fff; 
+	width:79%; 
+	box-sizing: border-box;
+	text-align:left;
+	margin:0;
+line-height:18px;
+}
+.content .page-content ul.ul-block{ 				
+	position:relative;
+	background:#eee; 
+	width:25%; 
+	display:inline-block;
+	vertical-align:top;
+	padding:8px;
+	box-sizing: border-box;
+margin:0 4%;
+}
+.content .page-content ul.ul-block:after{
+	content: "";
+  	width: 0; 
+  	height: 0; 
+	position:absolute;
+	right:-18%;
+	top:45%;
+  	border-top: 15px solid transparent;
+  	border-bottom: 15px solid transparent;
+  	border-left: 15px solid #ff6600;
+}
+.content .page-content ul.ul-block.last:after{
+	display:none;
+}
+.content .page-content ul.ul-block li:first-child, .content .page-content ul.ul-block-2 li:first-child{ 				
+	font-weight:bold;
+	list-style:none;
+	margin:0 0 0 8px;
+	color:#91a78a;
+}
+
+.content .page-content ul.ul-block-2{ 				
+	border:1px solid #eee; 
+	width:25%; 
+	display:inline-block;
+	vertical-align:top;
+	padding:8px;
+	box-sizing: border-box;
+	margin:4%;
+}
+	/* START | TABLE - VARIA STRUCTURED OPPORTUNITIES */
+	.vsHighlights{ display: inline-block; width: 35%; }
+	.vsHighlights > p{ display: none; }
+	.structuredOpp{ display: inline-block; width: 64%; vertical-align: top; }
+	.structuredOpp *{ font-size: 15px; }
+	.structuredOpp h3{ background: #ee9535; color:#fff; font-size: 18px; font-weight: bold; padding: 3px 6px; margin:0; text-align: center; }
+	.structuredOpp dl { display: inline-block; width: 100%; margin:0; }
+	.structuredOpp dl > *{ display: inline-block; width: 45%; vertical-align: top; margin:0; padding: 5px; }
+	.structuredOpp dl:nth-child(even){ background: #d5d5d5; }
+	.structuredOpp dl:nth-child(odd){ background: #ececec; }
+	.structuredOpp dl dt{ width: 39%; }
+	.structuredOpp dl p{ margin:0; padding: 0; }
+	.structuredOpp dl dd ul{ display: inline-block; vertical-align: top; padding: 0 1.2em; width: 49%; box-sizing: border-box;}
+	/* END | TABLE */
+
+/* END | Página Our Solutions */
+
+.home .team{ background:#e7e7e7; }
+.home .team .section-heading, .home .features .section-heading{ color:#90a789; }
+body .features .primary-color{ color:#ff6600; }
+
+body .features .row{ text-align: center; }
+body .features .row .column{ float:none; display:inline-block; vertical-align:top; width: 35%; }
+
+body .team .row{ text-align:center; }
+body .team .column-narrow.col4{ float:none; display:inline-block; vertical-align:top; }
+
+body .pagetitle{ 
+	padding:40px 0; 
+}
+body #pagetitle{ z-index:999; }
+body .pagetitle:after{ 
+	content:'';
+	width:100%;
+	height:100%;
+	background:url("http://brainvest.com/montblanc/wp-content/uploads/2017/02/maze-1236395-earlybird.jpg");
+    background-position: center top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	position:absolute;
+	left:0;
+	top:0;
+	opacity:.4;
+}
+
+body .pagetitle .pagetitle-title{ 
+	font-weight:bold; 
+}
+
+body .breadcrumb{ 
+	display:none; 
+}
+body .primary-color{
+	color:#ffcc3b
+}
+body .menu-main li a{
+	-webkit-transition: all .2s; 
+	transition: all .2s;
+}
+body .current-menu-item a,
+body .menu-main li a:hover{ 	
+	color:#ff6600; 
+	font-weight:bold;
+}
+nav.index-navg{
+	text-align:center;
+}
+nav.index-navg a{
+	display:inline-block;
+	border:1px solid #eee;
+	padding:2px 15px 2px 10px;
+	margin:5px;
+	background:#fefefe;
+	text-decoration:none;
+	-webkit-transition: all .2s; 
+	transition: all .2s;
+}
+nav.index-navg a:hover{
+	background:#2a88bf;
+	color:#fff;
+}
+nav.index-navg a.last{
+	border:none;
+}
+nav.index-navg br{
+	display:none;
+}
+
+section.timeline{ width: 100%; margin: 0 auto; font-size: 12px; text-align: center; } 
+	section.timeline .time{ display: inline-block; cursor: pointer; vertical-align: top; width: 13.3%; overflow: hidden; text-align: center; margin-right: -15px; -webkit-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+		section.timeline .time *:not(.year){ opacity: 0.7; }
+		section.timeline .time .year strong{ opacity: 1 !important; }
+
+	section.timeline .time:hover, section.timeline .time.active{ width: 25%; }
+	section.timeline .time:hover *, section.timeline .time.active *{ opacity: 1; -webkit-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+
+		
+		section.timeline .time div strong{ position:relative; color: #fff; display: inline-block; font-weight: normal; line-height: 30px; padding:4px 10px; box-sizing: border-box; border-top-right-radius: 10px; border-bottom-right-radius: 10px; font-size: 11px; }
+		section.timeline .time div strong:before{ content: ''; position: absolute; left:-5px; top: calc(50% - 5px); width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-right:5px solid blue; }
+		section.timeline .time div strong.bg-green{ background-color: #647868; }
+		section.timeline .time div strong.bg-green:before{ border-right-color: #647868; }
+		section.timeline .time div strong.bg-orange{ background-color: #ff6202; }
+		section.timeline .time div strong.bg-orange:before{ border-right-color: #ff6202; }
+		section.timeline .time .year{ position:relative; display: block; width: 100%; margin:25px 0 40px;  padding: 2.5px; box-sizing: border-box; background-color: #e7e7e7; border-top: 2px solid #f1eff2; border-bottom: 2px solid #f1eff2; }
+			section.timeline .time .year strong{ position:absolute; left: 0; top: 10px; width: 100%; text-align: center; }
+		section.timeline .time .year:before{ content: "\f0c9"; 
+			display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background-color: #f1eff2; 
+			position:absolute; width: 50%; left: 3px; border-radius: 5px; width: 20px; height: 20px; top: calc(50% - 10px); line-height: 20px; color: #817f87; 
+			box-shadow: 0px 0px 5px rgba(172,172,172,0.7); -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg);
+		}
+		section.timeline .time .year:after{ content:''; position:absolute; width: 50%; right: 0; height: 3px; top: calc(50% - 2px);  }
+		section.timeline .time .year.line-orange:after{ background-color: #ff6202; }
+		section.timeline .time .year.line-green:after{ background-color: #647868; }
+		
+		section.timeline .time .cnt-above{ min-height: 125px; }
+		section.timeline .time .cnt-below{ margin-top: 5px; }
+			section.timeline .time .cnt-below strong{ margin: 5px 15%; }
+
+
+
+/* Media Query */
+/*******************************/
+@media only screen and (max-width: 600px){
+	.header .logo{
+	    max-width: 80%;
+		margin-top:5px;
+	}
+	.menu-footer li a > span.menu-link{
+	    text-align:center;
+	}
+	.page-content .addresses{
+	    width:100% !important;
+		padding:0 !important;
+		border:0 !important;
+	}
+	.page-content .form1 .wdform-label-section{
+		display: block;
+	    padding: 0 !important;
+	    width: auto !important;
+	    text-align: center;
+	}
+
+	.page-content .form1 .wdform-field{
+		width:100% !important;
+		display:block;
+	}
+	.wdform_row .wdform-field .wdform-element-section{
+		width:100% !important;
+		text-align:center;
+		display:block !important;
+	}
+	.wdform_row .wdform-field .wdform-element-section button{
+		width:100% !important;
+		margin: 0 0 15px;
+		text-align:center;
+		display:block !important;
+		float:none; 
+	}
+	.form1 .button-submit{
+		display:block !important;
+	}
+	.content .page-content > dl dt, .content .page-content > dl dd{
+		width:100%;
+	}
+	.content .page-content ul.ul-block,
+	.content .page-content ul.ul-block-2{
+		width:100%; 
+		margin:8% 0 5%;
+	}
+	.content .page-content ul.ul-block:after{
+		right:50%;
+		top:initial;
+		bottom:-25%;
+		-ms-transform: rotate(90deg); 
+	    -webkit-transform: rotate(90deg); 
+	    transform: rotate(90deg);
+	}
+	.page-content .alignright, .page-content img.alignright{
+		float:none;
+		max-width:100%;
+		margin:0;
+	}
+	.content .page-content a.msg-to-mobile:before{
+		content:'Clique na imagem para Zoom (+)';
+		font-size:0.8em;
+		text-align:center;
+		display:block;
+	}
+	section.timeline .time{ width: 90% !important; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 20px; }
+	section.timeline .time, section.timeline .time *{ opacity: 1 !important; }
+	section.timeline .time, section.timeline .time .cnt-above{ min-height: auto !important; }
+
+}
+/*******************************/
+@media only screen and (max-width: 800px){
+	.page-content .addresses{  padding: 0px 12px; width: 46%; }
+	.structuredOpp, .vsHighlights{ width: 100%; }
+	.structuredOpp dl > *{ width: 100% !important; display: block; text-align: center; }
+}
+
