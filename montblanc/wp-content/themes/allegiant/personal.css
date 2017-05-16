@@ -9,12 +9,13 @@ body:not(.home){
 	background:none;
 }
 .slider{ background: #e7e7e7; }
-.slider-slides .slide-content,
-#slb_viewer_wrap .slb_data_content{
-	display:none; 
-}
+.slider-slides .slide-content, .slider-slides .slide-content *,
+#slb_viewer_wrap .slb_data_content, #slb_viewer_wrap .slb_data_content *{ color: #567; line-height: 1.2; }
 .features .feature .feature-icon{
 	display:none;
+}
+.slider-slides .slide-caption{
+	width: 57%;
 }
 .features .feature .feature-title, .services .service .service-title,
 .team .team-member-title{
