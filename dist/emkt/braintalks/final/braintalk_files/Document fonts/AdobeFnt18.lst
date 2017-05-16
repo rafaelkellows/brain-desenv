@@ -1,0 +1,126 @@
+%!Adobe-FontList 1.18
+%Locale:0x416
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Arquitecta
+FamilyName:Arquitecta
+StyleName:Regular
+FullName:Arquitecta
+MenuName:Arquitecta
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Rafael Nascimento\Downloads\PROGRAMAC╠ºA╠âO1 Folder\Document fonts\Arquitecta.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:135912
+FileModTime:1489674795
+WeightClass:450
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Arquitecta
+NameArray:0,Win,1,Arquitecta
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ArquitectaBold
+FamilyName:Arquitecta
+StyleName:Bold
+FullName:Arquitecta Bold
+MenuName:Arquitecta Bold
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Rafael Nascimento\Downloads\PROGRAMAC╠ºA╠âO1 Folder\Document fonts\ArquitectaBold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:136364
+FileModTime:1489674795
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Arquitecta Bold
+NameArray:0,Win,1,Arquitecta Bold
+NameArray:0,Win,16,Arquitecta
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ArquitectaHeavy
+FamilyName:Arquitecta
+StyleName:Heavy
+FullName:Arquitecta Heavy
+MenuName:Arquitecta Heavy
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Rafael Nascimento\Downloads\PROGRAMAC╠ºA╠âO1 Folder\Document fonts\ArquitectaHeavy.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:137216
+FileModTime:1489674795
+WeightClass:900
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Arquitecta Heavy
+NameArray:0,Win,1,Arquitecta Heavy
+NameArray:0,Win,16,Arquitecta
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ArquitectaLight
+FamilyName:Arquitecta
+StyleName:Light
+FullName:Arquitecta Light
+MenuName:Arquitecta Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Rafael Nascimento\Downloads\PROGRAMAC╠ºA╠âO1 Folder\Document fonts\ArquitectaLight.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:135608
+FileModTime:1489674795
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Arquitecta Light
+NameArray:0,Win,1,Arquitecta Light
+NameArray:0,Win,16,Arquitecta
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:BemboStd
+FamilyName:Bembo Std
+StyleName:Regular
+FullName:Bembo Std
+MenuName:Bembo Std
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Rafael Nascimento\Downloads\PROGRAMAC╠ºA╠âO1 Folder\Document fonts\BemboStd.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:63484
+FileModTime:1489674795
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Bembo Std
+NameArray:0,Win,1,Bembo Std
+%EndFont
+
