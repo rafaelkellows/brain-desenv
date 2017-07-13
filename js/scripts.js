@@ -69,10 +69,10 @@ $(function(){
              		$('main section.comoInvestir ul li span.as').html( 'as of '+ brainvest.currDate() );
                     break;
                  case "fr":
-             		$('main section.comoInvestir ul li span.as').html( 'informations de  '+ brainvest.currDate() );
+             		$('main section.comoInvestir ul li span.as').html( 'informations de '+ brainvest.currDate() );
                     break;
                  default:
-             		$('main section.comoInvestir ul li span.as').html( 'from '+ brainvest.currDate() );
+             		$('main section.comoInvestir ul li span.as').html( 'desde el '+ brainvest.currDate() );
                     break;
              }
 	        },
