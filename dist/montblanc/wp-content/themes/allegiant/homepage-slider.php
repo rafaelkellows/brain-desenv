@@ -10,12 +10,12 @@
 			<div class="slide-body">
 				<div class="container">
 					<div class="slide-caption">
-						<div class="slide-content">
-							<?php the_content(); ?>
-						</div>
 						<h2 class="slide-title">
 							<?php the_title(); ?>
 						</h2>
+						<div class="slide-content">
+							<?php the_content(); ?>
+						</div>
 						<?php cpotheme_edit(); ?>
 					</div>
 				</div>
