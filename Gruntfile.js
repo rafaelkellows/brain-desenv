@@ -35,7 +35,7 @@ module.exports = function(grunt) {
       //Copy all the files, except that
       build:{
         //The line bellow can be changed accordding to the project
-        src:['**','!node_modules/**','!**/Gruntfile.js','!**/package.json','!less/**','!images/psd/**','!baseProject/**',"!docs/**"],
+        src:['**','!node_modules/**','!**/Gruntfile.js','!**/package.json','!montblanc/**','!emkt/**','!betaversion/**','!less/**','!images/psd/**','!baseProject/**',"!docs/**"],
         dest:'dist',
         expand:true
       },
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          'dist/css/styles.min.css': ['dist/css/styles.min.css']
+          'dist/css/styles.min.css': 'css/styles_dev.css'
         }
       }
     },

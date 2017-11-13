@@ -427,11 +427,11 @@ main section.highlights ul li.hg_01 a {
   color: #adaf97;
 }
 main section.highlights ul li.hg_01 h3 {
-  padding: 30px 55px 10px;
+  padding: 30px 30px 10px;
   background-color: #465047;
 }
 main section.highlights ul li.hg_01 p {
-  padding: 0 35px;
+  padding: 0 30px;
   background-color: #465047;
 }
 main section.highlights ul li.hg_02 {
@@ -444,6 +444,9 @@ main section.highlights ul li.hg_02 h3,
 main section.highlights ul li.hg_02 p {
   background-color: #a5a88d;
 }
+main section.highlights ul li.hg_02 p {
+  padding: 0 45px;
+}
 main section.highlights ul li.hg_03 {
   background-color: #8b9079;
 }
@@ -451,7 +454,7 @@ main section.highlights ul li.hg_03 a {
   color: #e3e3d7;
 }
 main section.highlights ul li.hg_03 h3 {
-  padding: 30px 25px 10px;
+  padding: 30px 20px 10px;
   background-color: #8b9079;
 }
 main section.highlights ul li.hg_03 p {
@@ -2135,11 +2138,11 @@ main.internal#time section.quem-e article h3 {
   display: inline-block;
   vertical-align: top;
   padding: 0.4em 0.45em;
-  width: 27%;
+  width: 35%;
   line-height: 0.95em;
 }
 main.internal#time section.quem-e article p {
-  width: 63%;
+  width: 56%;
   display: inline-block;
   vertical-align: top;
   font-family: 'BemboStd';
