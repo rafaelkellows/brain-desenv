@@ -59,8 +59,8 @@ main{
     ul{
       position: absolute; right: 395px; width: 605px;
       li{
-        margin: 0 10px 0 0; font-size: 0.9em; display: inline-block;
-        a { .lnks; display: inline-block; font-size: 1.1em; }
+        margin: 0 10px 0 0; font-size: 0.8em; display: inline-block; font-weight:bold;
+        a { .lnks; font-size: 1.1em; font-weight:normal; }
       }
     }
     nav { 
@@ -396,9 +396,9 @@ main{
       }
     }
     address{
-      display: inline-block; padding: 29px 47px 0;
+      display: inline-block; padding: 29px 27px 0 43px ;
       p{
-        margin-bottom:29px; min-width: 208px; font-size: 1em; font-style: normal; line-height: 1.1em; letter-spacing: -0.03em; text-transform: uppercase; color: #fff; display: inline-block; vertical-align: top;
+        margin-bottom:29px; padding-right:1.1em; font-size: 0.9em; font-style: normal; line-height: 1.1em; letter-spacing: -0.03em; text-transform: uppercase; color: #fff; display: inline-block; vertical-align: top;
         em{ font-style: normal; padding-left: 31px; }
       }
     }
@@ -413,14 +413,17 @@ main{
     }
     >p{
       background: #fff; padding: 1em; text-align: center; margin-top: 33px; font-size: 15px;
-      > img{ width: 100px; display: block; margin:0 auto .5em; }
+      > img{ width: auto; display: inline-block; margin:0 .4em .5em; }
       span{ display: block; width: 38%; margin:0 auto; }
-      a{ 
+      a:not(.otherDisc){ 
         padding: 10px 0; width:120px; margin: 8px; display: inline-block; vertical-align: middle;
         img { width: 100%; }
         &:nth-child(2){
           img{ width: 90%; }
         }
+      }
+      a.otherDisc{
+        color: #4c5246; font-weight: bold; font-size: 1em; display: block; margin: 0em auto; width: 100px;
       }
       em{ font-style: normal; }
     }
@@ -470,7 +473,7 @@ main{
           width: 198px; margin: 7px 32px 10px 0; 
         }
       }
-      ul{ right: -5px; }/* float: right; margin: 14px 10px 8px; 21px 10px 8px; */ 
+      ul{ right: 0; text-align: right; }/* float: right; margin: 14px 10px 8px; 21px 10px 8px; */ 
     }
     /* ---------------------------- Ser Brain */
     &#ser-brain {    

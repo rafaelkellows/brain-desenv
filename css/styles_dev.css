@@ -163,16 +163,17 @@ main header ul {
 }
 main header ul li {
   margin: 0 10px 0 0;
-  font-size: 0.9em;
+  font-size: 0.8em;
   display: inline-block;
+  font-weight: bold;
 }
 main header ul li a {
   color: #475047;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  display: inline-block;
   font-size: 1.1em;
+  font-weight: normal;
 }
 main header ul li a.active {
   color: #f6861f;
@@ -969,12 +970,12 @@ main footer .socials a:hover i {
 }
 main footer address {
   display: inline-block;
-  padding: 29px 47px 0;
+  padding: 29px 27px 0 43px ;
 }
 main footer address p {
   margin-bottom: 29px;
-  min-width: 208px;
-  font-size: 1em;
+  padding-right: 1.1em;
+  font-size: 0.9em;
   font-style: normal;
   line-height: 1.1em;
   letter-spacing: -0.03em;
@@ -1014,27 +1015,35 @@ main footer > p {
   font-size: 15px;
 }
 main footer > p > img {
-  width: 100px;
-  display: block;
-  margin: 0 auto .5em;
+  width: auto;
+  display: inline-block;
+  margin: 0 .4em .5em;
 }
 main footer > p span {
   display: block;
   width: 38%;
   margin: 0 auto;
 }
-main footer > p a {
+main footer > p a:not(.otherDisc) {
   padding: 10px 0;
   width: 120px;
   margin: 8px;
   display: inline-block;
   vertical-align: middle;
 }
-main footer > p a img {
+main footer > p a:not(.otherDisc) img {
   width: 100%;
 }
-main footer > p a:nth-child(2) img {
+main footer > p a:not(.otherDisc):nth-child(2) img {
   width: 90%;
+}
+main footer > p a.otherDisc {
+  color: #4c5246;
+  font-weight: bold;
+  font-size: 1em;
+  display: block;
+  margin: 0em auto;
+  width: 100px;
 }
 main footer > p em {
   font-style: normal;
@@ -1117,7 +1126,8 @@ main.internal header h1 a {
   margin: 7px 32px 10px 0;
 }
 main.internal header ul {
-  right: -5px;
+  right: 0;
+  text-align: right;
 }
 main.internal#ser-brain section.featured,
 main.internal#como-investir section.featured {

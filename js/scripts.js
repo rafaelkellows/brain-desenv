@@ -14,13 +14,14 @@ $(function(){
             this.rszWindow();
 	        },
 	        firstaccess : function(){
-	        	var _host = (location.hostname.indexOf('brainvest') > -1) ? location.hostname+'/' : location.hostname+'/brainvest/' ;
+	        	var _host = (location.hostname.indexOf('brainvest') > -1) ? location.hostname+'/' : location.hostname+'/edsa-brainvest/' ;
 	        	var _path = location.pathname.substring(location.pathname.lastIndexOf('/'));
-
+	        	var _beta = (location.pathname.indexOf('beta') > -1) ? 'beta/' : '' ;
+	        	
 	        	//Click Event
 	        	$('main.inicial ul li a, main header nav.s_language a').click(function(e){
 					$.cookie("lang", $(this).attr('lang'), {expires:15, path:"/"});
-		        	window.location.href = 'http://'+_host+$.cookie('lang') +_path;
+		        	window.location.href = 'http://'+_host+_beta+$.cookie('lang') +_path;
 	        	});
 				//Redirect Event
 		        if( $.cookie('lang') != undefined && $.cookie('lang') != "undefined" && $('main.inicial').length > 0){
