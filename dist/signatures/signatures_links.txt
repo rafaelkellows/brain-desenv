@@ -117,6 +117,13 @@ http://www.brainvest.com/signatures/png/rodrigo_schenkman_full.png
 http://www.brainvest.com/signatures/png/rodrigo_schenkman_less.png
 http://www.brainvest.com/signatures/zip/rodrigo_schenkman.zip
 
+RODRIGO SCHENKMAN, CGA
+http://www.brainvest.com/signatures/html/rodrigo_schenkman_cga_full.html
+http://www.brainvest.com/signatures/html/rodrigo_schenkman_cga_less.html
+http://www.brainvest.com/signatures/png/rodrigo_schenkman_cga_full.png
+http://www.brainvest.com/signatures/png/rodrigo_schenkman_cga_less.png
+http://www.brainvest.com/signatures/zip/rodrigo_schenkman_cga.zip
+
 RONNY SPIEWAK
 http://www.brainvest.com/signatures/html/ronny_spiewak_full.html
 http://www.brainvest.com/signatures/html/ronny_spiewak_less.html
