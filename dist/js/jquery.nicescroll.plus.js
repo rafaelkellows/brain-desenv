@@ -103,7 +103,7 @@
         function endHover() {
           nc._stylerfbstate = false;
           nc.rail.css({
-            "backgroundColor":""
+            "backgroundColor":"#CED0D3"
           });
           nc.cursor.stop().animate({width:3},200);
         }
@@ -113,7 +113,7 @@
           nc.rail.css({
             "backgroundColor":"#CED0D3"
           });
-          nc.cursor.stop().css({width:10});          
+          nc.cursor.stop().css({width:3});          
         },
         function(){
           if (nc.rail.drag) return;

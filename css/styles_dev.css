@@ -15,7 +15,11 @@ p,
 form,
 fieldset,
 button,
-input {
+input,
+textarea,
+pre,
+figure,
+figcaption {
   border: none;
   margin: 0;
   padding: 0;
@@ -50,6 +54,9 @@ h6 {
 }
 html object {
   display: none;
+}
+textarea {
+  resize: none;
 }
 body {
   font-size: 100%;
@@ -88,13 +95,57 @@ body * {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.lnks.active {
+.lnks.active,
+.lnks:hover {
   color: #f6861f;
+}
+.d-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+.d-top {
+  display: inline-block;
+  vertical-align: top;
 }
 .transit {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+}
+.bsizing {
+  box-sizing: border-box;
+}
+.a-left {
+  float: left;
+  margin: 0 1em 0 0;
+}
+.a-right {
+  float: right;
+  margin: 0 1em 0 1em;
+}
+.a-center {
+  margin: 1em auto 0;
+}
+.a-bottom {
+  margin: 1em auto 0;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.hide {
+  display: none;
 }
 /*******************************
             MAIN
@@ -175,7 +226,8 @@ main header ul li a {
   font-size: 1.1em;
   font-weight: normal;
 }
-main header ul li a.active {
+main header ul li a.active,
+main header ul li a:hover {
   color: #f6861f;
 }
 main header nav {
@@ -195,6 +247,7 @@ main header nav a {
   font-size: 1.1em;
 }
 main header nav a.active,
+main header nav a:hover,
 main section.carrossel a:hover,
 main.internal#time > div a:hover {
   color: #f6861f;
@@ -374,7 +427,8 @@ main.internal#como-investir section.featured a:hover {
   font-size: 1.0625em;
   box-sizing: border-box;
 }
-main section.carrossel a.active {
+main section.carrossel a.active,
+main section.carrossel a:hover {
   color: #f6861f;
 }
 main section.highlights ul {
@@ -3008,6 +3062,948 @@ main.files section.list ul li i.fa-ban {
 @import "sprite.less";
 @import "form.less";
 @import "ie.less"; */
+/* SYSTEM CSS */
+section.sys {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: none;
+}
+section.sys ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #aca495;
+  font-size: .88em;
+}
+section.sys ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #aca495;
+  font-size: .88em;
+}
+section.sys :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #aca495;
+  font-size: .88em;
+}
+section.sys :-moz-placeholder {
+  /* Firefox 18- */
+  color: #aca495;
+  font-size: .88em;
+}
+section.sys .btn {
+  background-color: #d7d7c9;
+  color: #f5851f;
+  z-index: 9999;
+  text-align: center;
+}
+section.sys .btn.close {
+  border-right: 1px solid #a5a498;
+  border-bottom: 1px solid #a5a498;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+section.sys .btn.close i {
+  vertical-align: middle;
+  line-height: 1px;
+  margin-top: -1px;
+}
+section.sys .btn.close:hover {
+  background-color: #454c43;
+}
+section.sys .btn.delete,
+section.sys .btn.resend {
+  border-right: 1px solid #a5a498;
+  border-bottom: 1px solid #a5a498;
+  width: 240px;
+  text-align: center;
+  margin: 0 auto .5em !important;
+  height: 24px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  vertical-align: middle;
+}
+section.sys .btn.delete i,
+section.sys .btn.resend i {
+  vertical-align: middle;
+  line-height: 1px;
+  margin-top: -1px;
+}
+section.sys .btn.delete span,
+section.sys .btn.resend span {
+  font-size: 1.1em;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.3em;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+section.sys .btn.delete:hover,
+section.sys .btn.resend:hover {
+  background-color: #454c43;
+}
+section.sys .btn.sign-out {
+  border-right: 1px solid #a5a498;
+  border-bottom: 1px solid #a5a498;
+  width: auto;
+  height: 24px;
+  padding: 0 .1em 0 .2em;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 15px;
+  margin: -9px 8px 0;
+}
+section.sys .btn.sign-out i {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1px;
+  margin-top: -1px;
+  font-size: 20px;
+  margin-left: 2px;
+}
+section.sys .btn.sign-out span {
+  font-size: 0.45em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -0.2em;
+}
+section.sys .btn.sign-out:hover {
+  background-color: #454c43;
+}
+section.sys .btn.add {
+  border-right: 1px solid #a5a498;
+  border-bottom: 1px solid #a5a498;
+  width: 33px;
+  height: 33px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+section.sys .btn.add i {
+  vertical-align: middle;
+  line-height: 1px;
+  margin-top: 10px;
+  font-size: 1.4em;
+}
+section.sys .btn.add:hover {
+  background-color: #454c43;
+}
+section.sys .btn.go {
+  background-color: #aca495;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0.8em;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+section.sys .btn.go span {
+  font-size: 0;
+  height: 100%;
+  width: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+section.sys .btn.go:after {
+  content: '';
+  border: 0;
+  border-top: 9px solid transparent;
+  border-left: 12px solid #dfddcd;
+  border-bottom: 9px solid transparent;
+  display: inline-block;
+  vertical-align: middle;
+}
+section.sys .btn.go:hover {
+  background-color: #454c43;
+}
+section.sys .btn.back {
+  background: none;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2.8em !important;
+  margin-right: 2em !important;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  float: right;
+}
+section.sys .btn.back span {
+  font-size: 1.1em;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  color: #6c7866;
+  margin-left: 0.7em;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+section.sys .btn.back:before {
+  content: '';
+  border: 0;
+  border-top: 9px solid transparent;
+  border-right: 12px solid #b4b596;
+  border-bottom: 9px solid transparent;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+section.sys .btn.back:hover span {
+  color: #f5851f;
+}
+section.sys .btn.back:hover:before {
+  border-right: 12px solid #f5851f;
+}
+ > section.sys .btn:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+section.sys .btn.disabled {
+  cursor: default;
+  color: #666666;
+}
+section.sys .read {
+  color: #f5851f !important;
+}
+section.sys .read * {
+  color: #f5851f !important;
+}
+section.sys .read *:before {
+  color: #f5851f !important;
+}
+section.sys .read span {
+  color: #f5851f !important;
+}
+section.sys .read:before {
+  color: #f5851f !important;
+}
+section.sys:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: .9;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+section.sys:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+section.sys form {
+  width: 870px;
+  height: 625px;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 0 20px #888;
+}
+section.sys form:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url('../images/sys/bg.jpg') -78px -164px repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+section.sys form fieldset legend {
+  font-size: 2.375em;
+  text-transform: uppercase;
+  padding: 0.7em 0 .9em;
+  font-family: 'ArquitectaLight';
+  color: #454c43;
+}
+section.sys form fieldset > em {
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f5851f;
+  padding-bottom: .3em;
+  display: inline-block;
+  vertical-align: middle;
+}
+section.sys form fieldset > em.error {
+  color: red;
+}
+section.sys form fieldset > p {
+  color: #6c7866;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-family: 'ArquitectaLight';
+}
+section.sys form fieldset nav.nav-adm {
+  position: absolute;
+  left: 63px;
+  top: 39px;
+}
+section.sys form fieldset nav.nav-adm > * {
+  display: inline-block;
+  vertical-align: top;
+}
+section.sys form fieldset nav.nav-adm ul {
+  text-align: left;
+  margin-left: .2em;
+  display: none;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 9;
+  background: #d7d7c9;
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+section.sys form fieldset nav.nav-adm ul li {
+  padding: 0.1em 0 .15em;
+}
+section.sys form fieldset nav.nav-adm ul li a,
+section.sys form fieldset.logged.admin section article.add-article h1,
+section.sys form fieldset.logged.admin section article.add-user h1,
+section.sys form fieldset.logged.admin section article.add-file h1 {
+  text-transform: uppercase;
+  color: #6c7866;
+  font-size: 1.1em;
+  font-family: 'ArquitectaBold';
+  font-weight: normal;
+  border-bottom: 1px solid #b4b596;
+  padding-bottom: .1em;
+}
+section.sys form fieldset nav.nav-adm ul li:last-child a {
+  border-bottom: 0;
+}
+section.sys form fieldset nav.nav-adm ul.active {
+  display: inline-block;
+  opacity: 1;
+}
+section.sys form fieldset input,
+section.sys form fieldset textarea,
+section.sys form fieldset pre,
+section.sys form fieldset select,
+section.sys form fieldset.logged.admin section article.add-article figure,
+section.sys form fieldset.logged.admin section article.add-user figure,
+section.sys form fieldset.logged.admin section article.add-file figure,
+section.sys form fieldset.logged.admin section article.add-article ul li,
+section.sys form fieldset.logged.admin section article.add-user ul li,
+section.sys form fieldset.logged.admin section article.add-file ul li,
+section.sys form fieldset.logged.admin section article.add-article ul li:hover,
+section.sys form fieldset.logged.admin section article.add-user ul li:hover,
+section.sys form fieldset.logged.admin section article.add-file ul li:hover,
+section.sys form fieldset.logged.admin section article.add-article ul li.active,
+section.sys form fieldset.logged.admin section article.add-user ul li.active,
+section.sys form fieldset.logged.admin section article.add-file ul li.active,
+section.sys form fieldset.logged.admin section article.add-file label,
+section.sys form fieldset.logged.admin section article.add-user label {
+  background: #fff;
+  color: #aca495;
+  border-right: 2px solid #a5a498;
+  border-bottom: 2px solid #a5a498;
+  border-top: 2px solid #dfddcd;
+  border-left: 2px solid #dfddcd;
+  padding: .2em;
+  border-radius: 4px;
+  font-size: 1.25em;
+  font-family: 'ArquitectaLight';
+  width: 340px;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto .5em;
+  text-align: center;
+}
+section.sys form fieldset input[type=password] {
+  color: #ec8b0c;
+}
+section.sys form fieldset.logged legend {
+  padding: 0.7em 0 .25em;
+}
+section.sys form fieldset.logged section {
+  margin: 1em 4em;
+  text-align: left;
+}
+section.sys form fieldset.logged section nav a {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #aca495;
+  color: #dfddcd;
+  text-transform: uppercase;
+  font-size: 0.95em;
+  margin: 0 0 0 0.2em;
+  box-sizing: border-box;
+  padding: .3em .5em;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+section.sys form fieldset.logged section nav a:hover,
+section.sys form fieldset.logged section nav a.active {
+  background-color: #454c43;
+}
+section.sys form fieldset.logged section article {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-right: 2px solid #a5a498;
+  border-bottom: 2px solid #a5a498;
+  border-top: 2px solid #dfddcd;
+  border-left: 2px solid #dfddcd;
+  padding: 1.3em 1.4em;
+  border-radius: 4px;
+  background: #fff;
+}
+section.sys form fieldset.logged section article h1 {
+  display: none;
+}
+section.sys form fieldset.logged section article ul {
+  height: 320px;
+}
+section.sys form fieldset.logged section article ul li {
+  border-bottom: 1px solid #ec8b0c;
+  width: 97%;
+}
+section.sys form fieldset.logged section article ul li a {
+  display: inline-block;
+  vertical-align: middle;
+}
+section.sys form fieldset.logged section article ul li a *:not(.fa) {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1em;
+  font-family: 'ArquitectaLight';
+  color: #6c7866;
+  text-transform: uppercase;
+  font-style: normal;
+}
+section.sys form fieldset.logged section article ul li a em {
+  width: 12%;
+}
+section.sys form fieldset.logged section article ul li a span {
+  box-sizing: border-box;
+  width: 84%;
+  padding: 0 0 0 .7em;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+section.sys form fieldset.logged section article ul li a i {
+  display: inline-block;
+  vertical-align: middle;
+  margin: .45em .1em;
+}
+section.sys form fieldset.logged section article ul li a i:before {
+  color: #b4b596;
+  /*color:#454c43;*/
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+section.sys form fieldset.logged section article ul li a i.fa.fa-edit:before {
+  font-size: 1.2em;
+}
+section.sys form fieldset.logged section article ul li a i.fa.fa-trash:before {
+  font-size: 1.16em;
+}
+section.sys form fieldset.logged section article ul li a:not(.desc) {
+  /*margin: .45em 0;*/
+}
+section.sys form fieldset.logged section article ul li a:not(.desc) span {
+  display: none;
+}
+section.sys form fieldset.logged section article ul li a.desc {
+  width: 92%;
+}
+section.sys form fieldset.logged section article ul li a:hover span {
+  color: #454c43 !important;
+}
+section.sys form fieldset.logged section article ul li a:hover i:before {
+  color: #454c43 !important;
+}
+section.sys form fieldset.logged section article ul li i {
+  display: inline-block;
+  vertical-align: middle;
+  margin: .45em .1em;
+}
+section.sys form fieldset.logged section article ul li i:before {
+  color: #b4b596;
+  /*color:#454c43;*/
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+section.sys form fieldset.logged section article ul li i.fa.fa-edit:before {
+  font-size: 1.2em;
+}
+section.sys form fieldset.logged section article ul li i.fa.fa-trash:before {
+  font-size: 1.16em;
+}
+section.sys form fieldset.logged section article ul li.reading .desc:not(.read) span {
+  color: #454c43 !important;
+}
+section.sys form fieldset.logged section article ul li.reading .desc:not(.read) i:before {
+  color: #454c43 !important;
+}
+section.sys form fieldset.logged section article ul li.downloaded .download i:before {
+  color: #f5851f;
+}
+section.sys form fieldset.logged section article ul div.noselect,
+section.sys form fieldset pre,
+section.sys form fieldset.logged.admin section article.add-article figure,
+section.sys form fieldset.logged.admin section article.add-user figure,
+section.sys form fieldset.logged.admin section article.add-file figure {
+  padding: 0 .6em 1.2em 0;
+  display: none;
+  font-family: 'BemboStd';
+  color: #454c43;
+  border-bottom: 1px solid #ec8b0c;
+}
+section.sys form fieldset.logged section article ul div.noselect *,
+section.sys form fieldset pre *,
+section.sys form fieldset.logged.admin section article.add-article figure *,
+section.sys form fieldset.logged.admin section article.add-user figure *,
+section.sys form fieldset.logged.admin section article.add-file figure * {
+  font-family: 'BemboStd';
+  color: #454c43;
+  font-size: 1em;
+}
+section.sys form fieldset.logged section article ul div.noselect figure,
+section.sys form fieldset pre figure,
+section.sys form fieldset.logged.admin section article.add-article figure figure,
+section.sys form fieldset.logged.admin section article.add-user figure figure,
+section.sys form fieldset.logged.admin section article.add-file figure figure {
+  display: inline-block;
+  vertical-align: top;
+}
+section.sys form fieldset.logged section article ul div.noselect figure.a-bottom,
+section.sys form fieldset.logged section article ul div.noselect figure.a-center,
+section.sys form fieldset pre figure.a-bottom,
+section.sys form fieldset pre figure.a-center,
+section.sys form fieldset.logged.admin section article.add-article figure figure.a-bottom,
+section.sys form fieldset.logged.admin section article.add-article figure figure.a-center,
+section.sys form fieldset.logged.admin section article.add-user figure figure.a-bottom,
+section.sys form fieldset.logged.admin section article.add-user figure figure.a-center,
+section.sys form fieldset.logged.admin section article.add-file figure figure.a-bottom,
+section.sys form fieldset.logged.admin section article.add-file figure figure.a-center {
+  width: 100%;
+}
+section.sys form fieldset.logged section article ul div.noselect figure.a-bottom img,
+section.sys form fieldset.logged section article ul div.noselect figure.a-center img,
+section.sys form fieldset pre figure.a-bottom img,
+section.sys form fieldset pre figure.a-center img,
+section.sys form fieldset.logged.admin section article.add-article figure figure.a-bottom img,
+section.sys form fieldset.logged.admin section article.add-article figure figure.a-center img,
+section.sys form fieldset.logged.admin section article.add-user figure figure.a-bottom img,
+section.sys form fieldset.logged.admin section article.add-user figure figure.a-center img,
+section.sys form fieldset.logged.admin section article.add-file figure figure.a-bottom img,
+section.sys form fieldset.logged.admin section article.add-file figure figure.a-center img {
+  margin: 0 auto;
+  width: 90%;
+}
+section.sys form fieldset.logged section article ul div.noselect figure.a-left img,
+section.sys form fieldset.logged section article ul div.noselect figure.a-right img,
+section.sys form fieldset.logged section article ul div.noselect figure.a-top img,
+section.sys form fieldset.logged section article ul div.noselect figure.a-bottom img,
+section.sys form fieldset pre figure.a-left img,
+section.sys form fieldset pre figure.a-right img,
+section.sys form fieldset pre figure.a-top img,
+section.sys form fieldset pre figure.a-bottom img,
+section.sys form fieldset.logged.admin section article.add-article figure figure.a-left img,
+section.sys form fieldset.logged.admin section article.add-article figure figure.a-right img,
+section.sys form fieldset.logged.admin section article.add-article figure figure.a-top img,
+section.sys form fieldset.logged.admin section article.add-article figure figure.a-bottom img,
+section.sys form fieldset.logged.admin section article.add-user figure figure.a-left img,
+section.sys form fieldset.logged.admin section article.add-user figure figure.a-right img,
+section.sys form fieldset.logged.admin section article.add-user figure figure.a-top img,
+section.sys form fieldset.logged.admin section article.add-user figure figure.a-bottom img,
+section.sys form fieldset.logged.admin section article.add-file figure figure.a-left img,
+section.sys form fieldset.logged.admin section article.add-file figure figure.a-right img,
+section.sys form fieldset.logged.admin section article.add-file figure figure.a-top img,
+section.sys form fieldset.logged.admin section article.add-file figure figure.a-bottom img {
+  height: 150px;
+}
+section.sys form fieldset.logged section article ul div.noselect figure figcaption,
+section.sys form fieldset pre figure figcaption,
+section.sys form fieldset.logged.admin section article.add-article figure figure figcaption,
+section.sys form fieldset.logged.admin section article.add-user figure figure figcaption,
+section.sys form fieldset.logged.admin section article.add-file figure figure figcaption {
+  display: none;
+}
+section.sys form fieldset.logged section article ul div.noselect > p,
+section.sys form fieldset pre > p,
+section.sys form fieldset.logged.admin section article.add-article figure > p,
+section.sys form fieldset.logged.admin section article.add-user figure > p,
+section.sys form fieldset.logged.admin section article.add-file figure > p {
+  margin: 1em 1em 0 0;
+}
+section.sys form fieldset.logged section article ul div.noselect strong,
+section.sys form fieldset pre strong,
+section.sys form fieldset.logged.admin section article.add-article figure strong,
+section.sys form fieldset.logged.admin section article.add-user figure strong,
+section.sys form fieldset.logged.admin section article.add-file figure strong {
+  font-family: 'BemboSemibold';
+}
+section.sys form fieldset.logged section article ul div.noselect a,
+section.sys form fieldset pre a,
+section.sys form fieldset.logged.admin section article.add-article figure a,
+section.sys form fieldset.logged.admin section article.add-user figure a,
+section.sys form fieldset.logged.admin section article.add-file figure a {
+  display: inline-block;
+  vertical-align: top;
+  color: #aca495;
+}
+section.sys form fieldset.logged.admin section article.add-article,
+section.sys form fieldset.logged.admin section article.add-user,
+section.sys form fieldset.logged.admin section article.add-file {
+  background: none;
+  padding: 0;
+  border: none;
+}
+section.sys form fieldset.logged.admin section article.add-article h1,
+section.sys form fieldset.logged.admin section article.add-user h1,
+section.sys form fieldset.logged.admin section article.add-file h1 {
+  display: block;
+  margin-bottom: 0.7em;
+}
+section.sys form fieldset.logged.admin section article.add-article h1 > *,
+section.sys form fieldset.logged.admin section article.add-user h1 > *,
+section.sys form fieldset.logged.admin section article.add-file h1 > * {
+  display: inline-block;
+  vertical-align: top;
+}
+section.sys form fieldset.logged.admin section article.add-article h1 span,
+section.sys form fieldset.logged.admin section article.add-user h1 span,
+section.sys form fieldset.logged.admin section article.add-file h1 span {
+  width: 97%;
+}
+section.sys form fieldset.logged.admin section article.add-article input,
+section.sys form fieldset.logged.admin section article.add-user input,
+section.sys form fieldset.logged.admin section article.add-file input,
+section.sys form fieldset.logged.admin section article.add-article textarea,
+section.sys form fieldset.logged.admin section article.add-user textarea,
+section.sys form fieldset.logged.admin section article.add-file textarea {
+  text-align: left;
+  margin: 0 0 .5em;
+  display: inline-block;
+  vertical-align: top;
+}
+section.sys form fieldset.logged.admin section article.add-article input[name=date],
+section.sys form fieldset.logged.admin section article.add-user input[name=date],
+section.sys form fieldset.logged.admin section article.add-file input[name=date] {
+  width: 187px;
+}
+section.sys form fieldset.logged.admin section article.add-article input[name=title],
+section.sys form fieldset.logged.admin section article.add-user input[name=title],
+section.sys form fieldset.logged.admin section article.add-file input[name=title] {
+  width: 542px;
+  margin-left: 0.4em;
+}
+section.sys form fieldset.logged.admin section article.add-article input[name=image_src],
+section.sys form fieldset.logged.admin section article.add-user input[name=image_src],
+section.sys form fieldset.logged.admin section article.add-file input[name=image_src] {
+  width: 468px;
+  cursor: pointer;
+}
+section.sys form fieldset.logged.admin section article.add-article input[name=file_src],
+section.sys form fieldset.logged.admin section article.add-user input[name=file_src],
+section.sys form fieldset.logged.admin section article.add-file input[name=file_src] {
+  width: 740px;
+  cursor: pointer;
+}
+section.sys form fieldset.logged.admin section article.add-article p.loading,
+section.sys form fieldset.logged.admin section article.add-user p.loading,
+section.sys form fieldset.logged.admin section article.add-file p.loading {
+  display: none;
+}
+section.sys form fieldset.logged.admin section article.add-article input[name=file],
+section.sys form fieldset.logged.admin section article.add-user input[name=file],
+section.sys form fieldset.logged.admin section article.add-file input[name=file] {
+  display: none;
+}
+section.sys form fieldset.logged.admin section article.add-article textarea,
+section.sys form fieldset.logged.admin section article.add-user textarea,
+section.sys form fieldset.logged.admin section article.add-file textarea,
+section.sys form fieldset.logged.admin section article.add-article pre,
+section.sys form fieldset.logged.admin section article.add-user pre,
+section.sys form fieldset.logged.admin section article.add-file pre,
+section.sys form fieldset.logged.admin section article.add-article figure,
+section.sys form fieldset.logged.admin section article.add-user figure,
+section.sys form fieldset.logged.admin section article.add-file figure {
+  display: none;
+  vertical-align: top;
+  width: 740px;
+  height: 195px;
+  font-size: 1em;
+  font-family: monospace;
+  padding: 1em;
+  line-height: 1.4em;
+  color: #333;
+}
+section.sys form fieldset.logged.admin section article.add-article pre,
+section.sys form fieldset.logged.admin section article.add-user pre,
+section.sys form fieldset.logged.admin section article.add-file pre {
+  white-space: pre-line;
+  text-align: unset;
+}
+section.sys form fieldset.logged.admin section article.add-article pre img,
+section.sys form fieldset.logged.admin section article.add-user pre img,
+section.sys form fieldset.logged.admin section article.add-file pre img {
+  height: 150px;
+}
+section.sys form fieldset.logged.admin section article.add-article pre img.a-center,
+section.sys form fieldset.logged.admin section article.add-user pre img.a-center,
+section.sys form fieldset.logged.admin section article.add-file pre img.a-center {
+  margin-bottom: 1em;
+  height: auto;
+  width: 100%;
+}
+section.sys form fieldset.logged.admin section article.add-article pre img.a-bottom,
+section.sys form fieldset.logged.admin section article.add-user pre img.a-bottom,
+section.sys form fieldset.logged.admin section article.add-file pre img.a-bottom {
+  margin-top: 0;
+  height: auto;
+  width: 100%;
+}
+section.sys form fieldset.logged.admin section article.add-article pre p,
+section.sys form fieldset.logged.admin section article.add-user pre p,
+section.sys form fieldset.logged.admin section article.add-file pre p {
+  margin: 0;
+}
+section.sys form fieldset.logged.admin section article.add-article figure,
+section.sys form fieldset.logged.admin section article.add-user figure,
+section.sys form fieldset.logged.admin section article.add-file figure {
+  text-align: center;
+}
+section.sys form fieldset.logged.admin section article.add-article figure img,
+section.sys form fieldset.logged.admin section article.add-user figure img,
+section.sys form fieldset.logged.admin section article.add-file figure img {
+  display: block;
+  height: 100%;
+  margin: auto;
+}
+section.sys form fieldset.logged.admin section article.add-article ul,
+section.sys form fieldset.logged.admin section article.add-user ul,
+section.sys form fieldset.logged.admin section article.add-file ul {
+  height: auto;
+}
+section.sys form fieldset.logged.admin section article.add-article ul li,
+section.sys form fieldset.logged.admin section article.add-user ul li,
+section.sys form fieldset.logged.admin section article.add-file ul li {
+  display: inline-block;
+  vertical-align: top;
+  width: 59px;
+  margin-left: 0.29em;
+  padding: 0;
+}
+section.sys form fieldset.logged.admin section article.add-article ul li a,
+section.sys form fieldset.logged.admin section article.add-user ul li a,
+section.sys form fieldset.logged.admin section article.add-file ul li a {
+  width: 100%;
+  float: initial;
+  margin: 0;
+  text-align: center;
+  height: 31px;
+}
+section.sys form fieldset.logged.admin section article.add-article ul li a img,
+section.sys form fieldset.logged.admin section article.add-user ul li a img,
+section.sys form fieldset.logged.admin section article.add-file ul li a img {
+  width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+}
+section.sys form fieldset.logged.admin section article.add-article ul li a:before,
+section.sys form fieldset.logged.admin section article.add-user ul li a:before,
+section.sys form fieldset.logged.admin section article.add-file ul li a:before {
+  content: '';
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+section.sys form fieldset.logged.admin section article.add-article ul li:hover,
+section.sys form fieldset.logged.admin section article.add-user ul li:hover,
+section.sys form fieldset.logged.admin section article.add-file ul li:hover,
+section.sys form fieldset.logged.admin section article.add-article ul li.active,
+section.sys form fieldset.logged.admin section article.add-user ul li.active,
+section.sys form fieldset.logged.admin section article.add-file ul li.active {
+  border-color: #ec8b0c;
+  display: inline-block;
+  vertical-align: top;
+  width: 59px;
+  margin-left: 0.29em;
+  padding: 0;
+}
+section.sys form fieldset.logged.admin section article.add-article input[name=article_link],
+section.sys form fieldset.logged.admin section article.add-user input[name=article_link],
+section.sys form fieldset.logged.admin section article.add-file input[name=article_link] {
+  width: 740px;
+}
+section.sys form fieldset.logged.admin section article.add-article .btn,
+section.sys form fieldset.logged.admin section article.add-user .btn,
+section.sys form fieldset.logged.admin section article.add-file .btn {
+  margin: 0;
+}
+section.sys form fieldset.logged.admin section article.add-article .btn.go,
+section.sys form fieldset.logged.admin section article.add-user .btn.go,
+section.sys form fieldset.logged.admin section article.add-file .btn.go {
+  margin: 0 auto;
+  display: block;
+}
+section.sys form fieldset.logged.admin section article.add-article nav,
+section.sys form fieldset.logged.admin section article.add-user nav,
+section.sys form fieldset.logged.admin section article.add-file nav {
+  text-align: center;
+}
+section.sys form fieldset.logged.admin section article.add-file label strong {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-right: .5em;
+}
+section.sys form fieldset.logged.admin section article.add-file label input,
+section.sys form fieldset.logged.admin section article.add-file label span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -0.2em 0 0px 0.2em;
+  width: auto;
+}
+section.sys form fieldset.logged.admin section article.add-file input[type=text],
+section.sys form fieldset.logged.admin section article.add-file input[type=button],
+section.sys form fieldset.logged.admin section article.add-file label {
+  width: 740px !important;
+  margin-left: 0 !important;
+}
+section.sys form fieldset.logged.admin section article.add-file input[type=button] {
+  cursor: pointer;
+}
+section.sys form fieldset.logged.admin section article.add-file ul {
+  height: 230px;
+}
+section.sys form fieldset.logged.admin section article.add-file ul li {
+  width: auto;
+  display: block;
+  margin: 0;
+  border-color: #fff;
+}
+section.sys form fieldset.logged.admin section article.add-file ul li:hover {
+  width: auto;
+  margin: 0;
+}
+section.sys form fieldset.logged.admin section article.add-file ul.userlist {
+  border-right: 2px solid #a5a498;
+  border-bottom: 2px solid #a5a498;
+  border-top: 2px solid #dfddcd;
+  border-left: 2px solid #dfddcd;
+  background: #fff;
+  margin-bottom: 1em;
+}
+section.sys form fieldset.logged.admin section article.add-file ul.userlist li {
+  border: none;
+  padding: .25em 0 0 0;
+}
+section.sys form fieldset.logged.admin section article.add-file ul.userlist li:hover {
+  width: 100%;
+  margin: 0;
+}
+section.sys form fieldset.logged.admin section article.add-file ul.userlist li input[type=checkbox] {
+  width: auto;
+  margin: .25em .25em .25em 0;
+}
+section.sys form fieldset.logged.admin section article.add-file ul.userlist li span {
+  width: 94%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  cursor: pointer;
+}
+section.sys form fieldset.logged.admin section article.add-file p.loading {
+  display: none;
+}
+section.sys form fieldset.logged.admin section article.add-file select {
+  height: 150px;
+  width: 740px;
+}
+section.sys form fieldset.logged.admin section article.add-file select option {
+  font-size: .9em;
+}
+section.sys form fieldset.logged.admin section article.add-file label {
+  margin: 0;
+}
+section.sys form fieldset.logged.admin section article.add-user input[type=text],
+section.sys form fieldset.logged.admin section article.add-user input[type=password],
+section.sys form fieldset.logged.admin section article.add-user label {
+  width: 369px;
+  display: block;
+  margin: 0 auto .5em;
+}
+section.sys form fieldset.logged.admin section article.add-user label strong {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-right: .5em;
+}
+section.sys form fieldset.logged.admin section article.add-user label input,
+section.sys form fieldset.logged.admin section article.add-user label span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -0.2em 0 0px 0.2em;
+  width: auto;
+}
+section.sys form fieldset.logged.admin section article div.editable {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+section.sys form > img {
+  position: absolute;
+  width: 145px;
+  bottom: 31px;
+  left: calc(50% - 72.5px);
+}
 #alt-menu {
   position: absolute;
   width: 232px;

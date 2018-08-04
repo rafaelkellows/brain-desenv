@@ -1,8 +1,9 @@
 /* GERAL */
-body, html, div, span, a, ul, li, dl, dt, dd, section, header, p, form, fieldset, button, input{border: none; margin: 0; padding: 0; list-style: none; position: relative; text-decoration: none; outline: none; }
+body, html, div, span, a, ul, li, dl, dt, dd, section, header, p, form, fieldset, button, input, textarea, pre, figure, figcaption{border: none; margin: 0; padding: 0; list-style: none; position: relative; text-decoration: none; outline: none; }
 header, section, footer, aside, nav, main, article, figure, a, img, span, :after, :before { display: block; }
 h1,h2,h3,h4,h5,h6{font-weight: normal !important; margin: 0}
 html object{ display: none; }
+textarea { resize: none; }
 body{ 
   font-size:100%;
   *{ font-family: 'Arquitecta'; }
@@ -31,10 +32,26 @@ body{
 //Link Hover
 .lnks{
   color: @gray-1; .transit; 
-  &.active{ color:@orange; } 
+  &.active, &:hover{ color:@orange; }  
 }
+.d-middle{ display: inline-block; vertical-align: middle; }
+.d-top{ display: inline-block; vertical-align: top; }
 .transit{ -webkit-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
-
+.bsizing{ box-sizing: border-box; }
+.a-left{ float: left; margin:0 1em 0 0;   }
+.a-right{ float: right; margin:0 1em 0 1em;  }
+.a-center{ margin: 1em auto 0; }
+.a-bottom{ margin: 1em auto 0; }
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.hide{ display:none; }
 /*******************************
             MAIN
 *******************************/
@@ -203,7 +220,7 @@ main{
       p{
         .f-bembo; -webkit-transition: all 0.3s; transition: all 0.3s; font-size: 1.6875em; word-spacing: 2px; margin: 0; line-height: 36px; color: #FFF; padding: 62px 45px 0 12px; box-sizing: border-box; letter-spacing: -0.01em; 
         strong { .f-weight-bold; color: #d9d9cb; font-size: 2.0625rem; font-weight: normal; }
-        &:after{ content: ''; -webkit-transition: border 0.3s; transition: border 0.3s; border: 0; border-top: 13px solid transparent; border-left: 18px solid @orange; border-right: 12px solid transparent; border-bottom: 13px solid transparent; display: inline-block; vertical-align: middle; }
+        &:after{ content: ''; -webkit-transition: border 0.3s; transition: border 0.3s; border: 0; border-top: 13px solid transparent; border-left: 18px solid @orange; border-right: 12px solid transparent; border-bottom: 13px solid transparent; .d-middle; }
         &:hover{
           opacity: 0.8;
           &:after{ border-left-color: #002f17; }
@@ -388,7 +405,7 @@ main{
       padding: 48px 35px 0; -webkit-transition: padding 0.3s; transition: padding 0.3s;
       a{
         background-color: #687667; display: inline-block; width: 53px; height: 49px; text-align: center; margin:0 8px;
-        p{ text-indent: -9999em; width: 0; height: 100%; display: inline-block; vertical-align: middle; }
+        p{ text-indent: -9999em; width: 0; height: 100%; .d-middle; }
         i{ color: #b0b8a1; font-size: 2em; vertical-align: middle; -webkit-transition: color 0.3s; transition: color 0.3s; }
         &:hover{
           i{ color: #fff; }
@@ -416,7 +433,7 @@ main{
       > img{ width: auto; display: inline-block; margin:0 .4em .5em; }
       span{ display: block; width: 38%; margin:0 auto; }
       a:not(.otherDisc){ 
-        padding: 10px 0; width:120px; margin: 8px; display: inline-block; vertical-align: middle;
+        padding: 10px 0; width:120px; margin: 8px; .d-middle;
         img { width: 100%; }
         &:nth-child(2){
           img{ width: 90%; }
@@ -440,7 +457,7 @@ main{
     img{ top: calc(~"50% - 86px"); left: calc(~"50% - 268px"); }
     ul{
       position: absolute; top: 71%; left:0; width: 100%; .transit;
-      li{ display: inline-block; vertical-align: middle;
+      li{ .d-middle;
         a{ 
           &:extend(main.internal > nav a);
           &:hover{
@@ -504,8 +521,8 @@ main{
               width: 50%; vertical-align: top; display: inline-block; position: relative; margin-left: -3px; min-height: 505px;
               h4 { color: #eae9de; position: absolute; z-index: 999;; padding: 7% 6% 6%; width: 285px; top:calc(~"50% - 77px"); left:calc(~"50% - 142px"); text-transform: uppercase; font-size: 1.69em; background-color: inherit; box-sizing: border-box; line-height: 30px; letter-spacing: -0.6px; -webkit-transition: opacity 0.6s; -o-transition: opacity 0.6s; transition: opacity 0.6s; }
               img { z-index: 99; -webkit-transition: opacity 0.6s; -o-transition: opacity 0.6s; transition: opacity 0.6s; position: absolute; left: 0; top:0; width: 100%; }            
-              &:before{ content: ''; display: inline-block; vertical-align: middle; min-height: 505px; margin-right: -4px; }
-              p{ color: #f4f3f2; padding: 20% 18% 19.2%; font-size: 2.4em; display: inline-block; vertical-align: middle; line-height: 44px; -webkit-transition: all 0.3s; transition: all 0.3s; }
+              &:before{ content: ''; .d-middle; min-height: 505px; margin-right: -4px; }
+              p{ color: #f4f3f2; padding: 20% 18% 19.2%; font-size: 2.4em; .d-middle; line-height: 44px; -webkit-transition: all 0.3s; transition: all 0.3s; }
               &:first-child{ background-color: #8b9178; }
               &:nth-child(2) {
                 position: absolute; width: 100%; left: 0; text-align: center; line-height: 0; top: -50%;
@@ -536,8 +553,8 @@ main{
                 img{ opacity: 1; .transit; }
                 div{ 
                   height: 698px; margin-top: -698px; text-align: center; opacity: 0; .transit;
-                  &:before{ content:''; display: inline-block; vertical-align: middle; height: 100%; width: 0; }
-                  p{ box-sizing: border-box; font-size: 3.2em; width: 100%; text-align: center; line-height: 1.01em; padding: 0 0.6em; display: inline-block; vertical-align: middle; }
+                  &:before{ content:''; .d-middle; height: 100%; width: 0; }
+                  p{ box-sizing: border-box; font-size: 3.2em; width: 100%; text-align: center; line-height: 1.01em; padding: 0 0.6em; .d-middle; }
                 }
                 &:hover {
                   img, h4{ opacity: 0; }
@@ -579,13 +596,13 @@ main{
                   width: 1px; height: 315px;
                 }
                 h4{ opacity:1; background-color: #8b9178; padding: 5px 10px; opacity:1; .transit; font-size: 1.6em; text-align: center; z-index: 99; position: relative; width: 290px;
-                  display: inline-block; vertical-align: middle; 
+                  .d-middle; 
                 }
                 img{ opacity: 1; .transit; margin-top: -315px; }
                 div{ 
                   height: 315px; margin-top: -315px; text-align: center; opacity: 0; .transit;
-                  &:before{ content:''; display: inline-block; vertical-align: middle; height: 100%; width: 0; }
-                  p{ box-sizing: border-box; font-size: 1.7em; width: 100%; text-align: center; line-height: 1.01em; padding: 0 0.6em; display: inline-block; vertical-align: middle; text-transform: initial; }
+                  &:before{ content:''; .d-middle; height: 100%; width: 0; }
+                  p{ box-sizing: border-box; font-size: 1.7em; width: 100%; text-align: center; line-height: 1.01em; padding: 0 0.6em; .d-middle; text-transform: initial; }
                 }
                 &:hover {
                   img, h4{ opacity: 0; }
@@ -664,13 +681,13 @@ main{
             a{ 
               width: 50px; height: 50px; background: #aea498; position: absolute; top: calc(~"50% - 25px"); text-align: center; display: none;
               &:before{
-                content:''; display: inline-block; vertical-align: middle; height: 100%;
+                content:''; .d-middle; height: 100%;
               }
-              &:after{ content: ''; -webkit-transition: border 0.3s; transition: border 0.3s; border: 0; border-top: 13px solid transparent; border-right: 18px solid #E0DED1; border-bottom: 13px solid transparent; display: inline-block; vertical-align: middle; margin: 12px 25px 12px -43px; z-index: 9; position: relative; margin: 0 !important; }
+              &:after{ content: ''; -webkit-transition: border 0.3s; transition: border 0.3s; border: 0; border-top: 13px solid transparent; border-right: 18px solid #E0DED1; border-bottom: 13px solid transparent; .d-middle; margin: 12px 25px 12px -43px; z-index: 9; position: relative; margin: 0 !important; }
               &:first-child{ left: -25px; }
               &:last-child{
                 right: -25px;
-                &:after{ content: ''; -webkit-transition: border 0.3s; transition: border 0.3s; border: 0; border-top: 13px solid transparent; border-left: 18px solid #E0DED1; border-bottom: 13px solid transparent; display: inline-block; vertical-align: middle; margin: 12px -189px 12px 25px; z-index: 9; position: relative; margin: 0 !important; }
+                &:after{ content: ''; -webkit-transition: border 0.3s; transition: border 0.3s; border: 0; border-top: 13px solid transparent; border-left: 18px solid #E0DED1; border-bottom: 13px solid transparent; .d-middle; margin: 12px -189px 12px 25px; z-index: 9; position: relative; margin: 0 !important; }
               }
             }
           }
@@ -681,11 +698,11 @@ main{
               display: inline-block; vertical-align: top; width: 53.4%;
               dt:extend(main section.passoAPasso > div dl dt){
                 margin: 0 84px; width: 146px; height: 149px; font-size: 2em; padding: 0; box-sizing: border-box; text-align: center; position: relative;
-                &:before{ content:""; display: inline-block; vertical-align: middle; padding: 0; height: 100%; margin-left:-3px; }
+                &:before{ content:""; .d-middle; padding: 0; height: 100%; margin-left:-3px; }
                 &:after{
                   &:extend(main section.passoAPasso > div dl dt:after); bottom: -9px; background: none; padding: 0;
                 }
-                p{ display: inline-block; vertical-align: middle; line-height: 1.4em; }
+                p{ .d-middle; line-height: 1.4em; }
                 strong{ display: block; font-size: 2.2em; font-weight: normal; }
               }
               dd{
@@ -712,7 +729,7 @@ main{
                   > span{ 
                     background: #727d6c; border-radius: 26px; color: #ebe7db; display: inline-block; width: 48px; height: 48px; margin: 2.6em 0 0.6em;
                     &:first-child{ margin-top: 1em; }
-                    &:before{ content:''; height: 100%; display: inline-block; vertical-align: middle; }
+                    &:before{ content:''; height: 100%; .d-middle; }
                     i{ font-size: 2em; vertical-align: middle; }
                   }
                   > p{ 
@@ -759,7 +776,7 @@ main{
                   text-align: center; padding: 1em 0 1em; margin:0.7em 0 2.8em 0;
                   > span{ 
                     background: #737D6B; border-radius: 50px; color: #ebe7db; display: inline-block; width: 60px; height: 60px; margin: 2.6em 0 0.6em;
-                    &:before{ content:''; height: 100%; display: inline-block; vertical-align: middle; }
+                    &:before{ content:''; height: 100%; .d-middle; }
                     i{ font-size: 2em; vertical-align: middle; }
                   }
                   > p{ 
@@ -776,7 +793,7 @@ main{
                     span{ 
                       background: #737D6B; border-radius: 50px; position: absolute; width: 70px; height: 70px; margin: -4em 0 0.6em; left: calc(~"50% - 35px");
                       i{
-                        background: url('../images/como-investir/ico-tree.png') center center no-repeat; background-size: 85%; width: 100%; height: 100%; display: inline-block; vertical-align: middle; }
+                        background: url('../images/como-investir/ico-tree.png') center center no-repeat; background-size: 85%; width: 100%; height: 100%; .d-middle; }
                     }
                   }
                   &.newcontent{
@@ -805,7 +822,7 @@ main{
                   text-align: center; padding: 1em 0 1em; margin:0.7em 0 1.8em 0;
                   > span{ 
                     background: #737D6B; border-radius: 50px; color: #ebe7db; display: inline-block; width: 60px; height: 60px; margin: 2.6em 0 0.6em;
-                    &:before{ content:''; height: 100%; display: inline-block; vertical-align: middle; }
+                    &:before{ content:''; height: 100%; .d-middle; }
                     i{ font-size: 2em; vertical-align: middle; }
                   }
                   > p{ 
@@ -822,7 +839,7 @@ main{
                     span{ 
                       background: #737D6B; border-radius: 50px; position: absolute; width: 70px; height: 70px; margin: -4em 0 0.6em; left: calc(~"50% - 35px");
                       i{
-                        background: url('../images/como-investir/ico-tree.png') center center no-repeat; background-size: 85%; width: 100%; height: 100%; display: inline-block; vertical-align: middle; }
+                        background: url('../images/como-investir/ico-tree.png') center center no-repeat; background-size: 85%; width: 100%; height: 100%; .d-middle; }
                     }
                   }
                 }
@@ -845,8 +862,8 @@ main{
                     > a{ position: absolute; right: 0.5em; top: 0.5em; font-size: 1.4em;
                       i{ color:#4b5145; }
                     }
-                    &:before{ content: ''; display: inline-block; vertical-align: middle; height: 100%; }
-                    img{ margin: 0 auto; display: inline-block; vertical-align: middle; }
+                    &:before{ content: ''; .d-middle; height: 100%; }
+                    img{ margin: 0 auto; .d-middle; }
 
                   }
                   &:first-child{
@@ -904,7 +921,7 @@ main{
           }
           > div.team{
             dl{
-              display: inline-block; vertical-align: middle; width: 48%; margin: 0 0.80em 0.80em; text-align: center; .transit;
+              .d-middle; width: 48%; margin: 0 0.80em 0.80em; text-align: center; .transit;
               &:nth-child(2n+2){
                   margin: 0 0 0.85em -3px
               }
@@ -957,8 +974,8 @@ main{
             li{ 
               display: inline-block; vertical-align: top; height: 10em; width: 10em; border-radius: 5em; margin: 0 1.3em;  text-transform: uppercase; .transit;
               &.empty{ background: none; }
-              &:before{ content: ''; height: 100%; width: 0; display: inline-block; vertical-align: middle; }
-              p{ display: inline-block; vertical-align: middle; font-size: 1.25em; }
+              &:before{ content: ''; height: 100%; width: 0; .d-middle; }
+              p{ .d-middle; font-size: 1.25em; }
               a{ color:#dfe0d2; }
             }
           }
@@ -1006,10 +1023,10 @@ main{
       }
       a {
         .transit; text-transform: uppercase; margin: 0 14px; color: #475047; display: inline-block; padding-top: 16px; font-family: "ArquitectaBold"; font-size: 1.1em; line-height: 20px;
-        p{ display: inline-block; vertical-align: middle; .f-weight-bold; padding: 0 10px; }
+        p{ .d-middle; .f-weight-bold; padding: 0 10px; }
         &:first-child {
           float: left; text-align: left; margin: 0; color: #475047; padding:0;
-          &:before{ content:''; width: 50px; height: 50px; background: #aea498; display: inline-block; vertical-align: middle; }
+          &:before{ content:''; width: 50px; height: 50px; background: #aea498; .d-middle; }
           &:after{ content: ''; -webkit-transition: border 0.3s; transition: border 0.3s; border: 0; border-top: 13px solid transparent; border-right: 18px solid #E0DED1; border-bottom: 13px solid transparent; position: absolute; left: 14px; top: 12px; }
           &:hover{ 
             &:after{ border-right-color: #475047; }
@@ -1018,7 +1035,7 @@ main{
         &:last-child {
           float: right; text-align: left; margin: 0; color: #475047; padding:0; text-align: right;
           &:before{ content: ''; -webkit-transition: border 0.3s; transition: border 0.3s; border: 0; border-top: 13px solid transparent; border-left: 18px solid #E0DED1; border-bottom: 13px solid transparent; z-index: 9; position: absolute; right: 14px; top: 12px; }
-          &:after{ content:''; width: 50px; height: 50px; background: #aea498; display: inline-block; vertical-align: middle; }
+          &:after{ content:''; width: 50px; height: 50px; background: #aea498; .d-middle; }
           &:hover{ 
             &:before{ border-left-color: #475047; }
           }
@@ -1125,11 +1142,11 @@ main{
       span.btns{
         text-align: center;
         a.fa{ 
-          float: none; display: inline-block; vertical-align: middle; font-size: 0; margin:10px 5px;
+          float: none; .d-middle; font-size: 0; margin:10px 5px;
           &.fa-check{ background-color: @blue; }
           &.fa-trash{ background-color: @red; }
-          &:before{ font-size: 22px; display: inline-block; vertical-align: middle; }
-          &:after{ content: ''; height: 100%; width: 1px; display: inline-block; vertical-align: middle; }
+          &:before{ font-size: 22px; .d-middle; }
+          &:after{ content: ''; height: 100%; width: 1px; .d-middle; }
         }
         input[type=submit]{ visibility: hidden; width: 0 !important; height: 0; overflow: hidden; padding: 0;margin: 0; }
       }
@@ -1167,10 +1184,10 @@ main{
             }
             &:extend(main.files form.login input[type='submit']); 
             &:before{
-              content:''; height: 100%; display: inline-block; vertical-align: middle;
+              content:''; height: 100%; .d-middle;
             }
             span{ 
-              display: inline-block; vertical-align: middle; text-align: center; font-size: 12px; 
+              .d-middle; text-align: center; font-size: 12px; 
               i{ font-size: 28px; }
               font{ display: block; font-size: 10px; letter-spacing: 0; font-family: 'Arial'; padding-top: 4px; }
             }
@@ -1195,7 +1212,7 @@ main{
               font-size: 20px; color: #4c5246; margin:5px 0; .transit;
               &:hover{ color: @orange; }
             }
-            em, span, i{ display: inline-block; vertical-align: middle; }
+            em, span, i{ .d-middle; }
             em{ width: 25px; margin-right: 5px; text-align: center; background-color: #e9e9e9; font-style: normal; }
             span{ width: 205px; }
             i{ 
