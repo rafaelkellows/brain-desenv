@@ -1,7 +1,7 @@
 [{
   "addressess" : [
     {
-      "switzerland" : "9, place du molard<br> 1204 genève - Switzerland<br> Tel: +41 22 310 7488<br> <em>+41 22 310 7490</em><br> Fax: +41 27 203 4718",
+      "switzerland" : "9, place du molard<br> 1204 Genève - Switzerland<br> Tel: +41 22 310 7488<br> <em>+41 22 310 7490</em><br> Fax: +41 27 203 4718",
       "brazil" : "R dos Pinheiros, 870<br> CJ 123/124<br> CEP 05422-001<br> São Paulo - Brasil<br> Tel: +55 11 3030 3120<br> Fax: +55 11 3026 9115"
     }
   ],

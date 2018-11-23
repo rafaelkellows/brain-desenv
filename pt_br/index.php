@@ -120,23 +120,23 @@
         <ul>
           <li class="ci_01">
             <p>
-              <strong>80%</strong>
-              de nossos clientes há mais de 5 anos.
+              <strong>70%</strong>
+              de nossos clientes há mais de 15 anos.
             </p>
             <span class="as">dados de 14/07/16</span>
           </li>            
           <li class="ci_02">
             <p>
-              <strong>85%</strong>
+              <strong>95%</strong>
               <span>&nbsp;</span>
               <span>profissionais certificados</span> 
-              em CFA, MBA ou mestrado
+              em CFA, MBA ou Mestrado
             </p>
             <span class="as">dados de 14/07/16</span>
           </li>
           <li class="ci_03">
             <p>Nossos sócios-fundadores estão desde o começo. Há uma retenção média de nossos profissionais de 
-                <strong>5</strong> 
+                <strong>15</strong> 
                 <span>anos</span> 
             </p>
             <span class="as">dados de 14/07/16</span>

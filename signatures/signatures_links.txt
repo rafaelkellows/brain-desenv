@@ -1,3 +1,10 @@
+ADIL NAFAKH-LAZRAQ
+http://www.brainvest.com/signatures/html/adil_nafakh_lazraq_full.html
+http://www.brainvest.com/signatures/html/adil_nafakh_lazraq_less.html
+http://www.brainvest.com/signatures/png/adil_nafakh_lazraq_full.png
+http://www.brainvest.com/signatures/png/adil_nafakh_lazraq_less.png
+http://www.brainvest.com/signatures/zip/adil_nafakh_lazraq.zip
+
 ANA PAULA WERNECK
 http://www.brainvest.com/signatures/html/ana_paula_werneck_full.html
 http://www.brainvest.com/signatures/html/ana_paula_werneck_less.html
@@ -82,6 +89,18 @@ http://www.brainvest.com/signatures/png/fernando_gelman_full.png
 http://www.brainvest.com/signatures/png/fernando_gelman_less.png
 http://www.brainvest.com/signatures/zip/fernando_gelman.zip
 
+FERNANDO GELMAN
+http://www.brainvest.com/signatures/html/guilherme_sm_amaral_less.html
+http://www.brainvest.com/signatures/html/guilherme_sm_amaral_full.html
+http://www.brainvest.com/signatures/png/guilherme_sm_amaral_less.png
+http://www.brainvest.com/signatures/png/guilherme_sm_amaral_full.png
+http://www.brainvest.com/signatures/zip/guilherme_sm_amaral.zip
+
+JACYRANDI STEINMANN
+http://www.brainvest.com/signatures/html/jacyrandi_steinmann.html
+http://www.brainvest.com/signatures/png/jacyrandi_steinmann.png
+http://www.brainvest.com/signatures/zip/jacyrandi_steinmann.zip
+
 LAURENT CUDRÉ-MAUROUX
 http://www.brainvest.com/signatures/html/laurent_cudre_mauroux_full.html
 http://www.brainvest.com/signatures/html/laurent_cudre_mauroux_less.html
@@ -95,6 +114,21 @@ http://www.brainvest.com/signatures/html/luciana_camargo_less.html
 http://www.brainvest.com/signatures/png/luciana_camargo_full.png
 http://www.brainvest.com/signatures/png/luciana_camargo_less.png
 http://www.brainvest.com/signatures/zip/luciana_camargo.zip
+
+
+LUIZ HENRIQUE FORJAZ
+http://www.brainvest.com/signatures/html/luiz_henrique_forjaz_full.html
+http://www.brainvest.com/signatures/html/luiz_henrique_forjaz_less.html
+http://www.brainvest.com/signatures/png/luiz_henrique_forjaz_full.png
+http://www.brainvest.com/signatures/png/luiz_henrique_forjaz_less.png
+http://www.brainvest.com/signatures/zip/luiz_henrique_forjaz.zip
+
+MANUEL MESSERLI
+http://www.brainvest.com/signatures/html/manuel_messerli_full.html
+http://www.brainvest.com/signatures/html/manuel_messerli_less.html
+http://www.brainvest.com/signatures/png/manuel_messerli_full.png
+http://www.brainvest.com/signatures/png/manuel_messerli_less.png
+http://www.brainvest.com/signatures/zip/manuel_messerli.zip
 
 MARTIN STÄMPFLI
 http://www.brainvest.com/signatures/html/martin_stampfli_full.html
@@ -116,6 +150,20 @@ http://www.brainvest.com/signatures/html/murillo_alves_less.html
 http://www.brainvest.com/signatures/png/murillo_alves_full.png
 http://www.brainvest.com/signatures/png/murillo_alves_less.png
 http://www.brainvest.com/signatures/zip/murillo_alves.zip
+
+PHILIPPE LOZOUET
+http://www.brainvest.com/signatures/html/philippe_lozouet_full.html
+http://www.brainvest.com/signatures/html/philippe_lozouet_less.html
+http://www.brainvest.com/signatures/png/philippe_lozouet_full.png
+http://www.brainvest.com/signatures/png/philippe_lozouet_less.png
+http://www.brainvest.com/signatures/zip/philippe_lozouet.zip
+
+RICARDO CORDEIRO
+http://www.brainvest.com/signatures/html/ricardo_cordeiro_full.html
+http://www.brainvest.com/signatures/html/ricardo_cordeiro_less.html
+http://www.brainvest.com/signatures/png/ricardo_cordeiro_full.png
+http://www.brainvest.com/signatures/png/ricardo_cordeiro_less.png
+http://www.brainvest.com/signatures/zip/ricardo_cordeiro.zip
 
 RODRIGO SCHENKMAN, CPA-20
 http://www.brainvest.com/signatures/html/rodrigo_schenkman_full.html
@@ -151,3 +199,8 @@ http://www.brainvest.com/signatures/html/taina_maldi_meireles_less.html
 http://www.brainvest.com/signatures/png/taina_maldi_meireles_full.png
 http://www.brainvest.com/signatures/png/taina_maldi_meireles_less.png
 http://www.brainvest.com/signatures/zip/taina_maldi_meireles.zip
+
+ZMIRA FRAVI
+http://www.brainvest.com/signatures/html/zmira_fravi.html
+http://www.brainvest.com/signatures/png/zmira_fravi.png
+http://www.brainvest.com/signatures/zip/zmira_fravi.zip
