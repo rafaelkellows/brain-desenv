@@ -4562,7 +4562,7 @@ section.sys form > img {
   main.internal#time section.quem-e > div.team dl dt {
     position: relative;
     background: #938a7b;
-    padding: 16px 0;
+    padding: 16px 0 !important;
     margin-bottom: -1px;
   }
   main.internal#time section.quem-e > div.team dl dd img {

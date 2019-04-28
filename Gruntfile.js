@@ -35,7 +35,7 @@ module.exports = function(grunt) {
       //Copy all the files, except that
       build:{
         //The line bellow can be changed accordding to the project
-        src:['**','!node_modules/**','!**/Gruntfile.js','!**/package.json','!montblanc/**','!emkt/**','!betaversion/**','!less/**','!images/psd/**','!baseProject/**','!downloads/**','!files/**','!news/**',"!docs/**"],
+        src:['**','!node_modules/**','!**/Gruntfile.js','!**sitemap.xml','!**/package.json','!emkt/**','!less/**','!images/psd/**','!baseProject/**','!downloads/**','!files/**','!news/**',"!docs/**"],
         dest:'dist',
         expand:true
       },
@@ -46,8 +46,9 @@ module.exports = function(grunt) {
         expand:true
       },
       github:{
-        src:['**','!node_modules/**','!baseProject/**','!dist/**'],
-        dest:'baseProject/github',
+        //src:['**','!node_modules/**','!baseProject/**','!dist/**'],
+        src:['**','!node_modules/**','!**/Gruntfile.js','!**sitemap.xml','!**/package.json','!emkt/**','!less/**','!images/psd/**','!baseProject/**','!downloads/**','!files/**','!news/**',"!docs/**"],
+        dest:'github',
         expand:true
       }
     },

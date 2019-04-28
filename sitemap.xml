@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url> 
+    <loc>http://www.revitechpisos.com.br</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>1</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/home-tecnologia.jpg</image:loc>
+       <image:caption>Tecnologia: Qualidade em primeiro lugar</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/home-design.jpg</image:loc>
+       <image:caption>Design: produtos que atingem todas as expectativas</image:caption>
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://www.revitechpisos.com.br/arevitech.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.5</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/arevitech.jpg</image:loc>
+       <image:caption>O que é ser Revitech?</image:caption>
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://www.revitechpisos.com.br/nossosprodutos.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/mantas.jpg</image:loc>
+       <image:caption>Nossos Produtos. Mantas: Medintech Plus, Medintone Pur, Solid Pur, Possibilities, PASTELL L2 e Majestic. Placas: Midtile, Ecoidea e Heavy. Réguas: Premium, Ecoidea, Heavy e Residence.</image:caption>
+    </image:image>
+  </url>
+
+  <url> 
+    <loc>http://www.revitechpisos.com.br/mantas-medintech-plus.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/placas-v2.jpg</image:loc>
+       <image:caption>Nossos Produtos: Mantas Medintech Plus.</image:caption>
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://www.revitechpisos.com.br/mantas-medintone-pur.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/placas-v2.jpg</image:loc>
+       <image:caption>Nossos Produtos: Mantas Medintone Pur.</image:caption>
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://www.revitechpisos.com.br/mantas-solid-pur.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/mantas-solid-pur.jpg</image:loc>
+       <image:caption>Nossos Produtos: Solid Pur.</image:caption>
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://www.revitechpisos.com.br/mantas-possibilities.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/mantas-possibilities.jpg</image:loc>
+       <image:caption>Nossos Produtos: Possibilities.</image:caption>
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://www.revitechpisos.com.br/mantas-pastell-l2.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/mantas-pastell-l2.jpg</image:loc>
+       <image:caption>Nossos Produtos: PASTELL L2.</image:caption>
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://www.revitechpisos.com.br/mantas-majestic.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/mantas.jpg</image:loc>
+       <image:caption>Nossos Produtos: Mantas Majestic.</image:caption>
+    </image:image>
+  </url>
+
+  <url> 
+    <loc>http://www.revitechpisos.com.br/placas-midtile.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/placas-v3.jpg</image:loc>
+       <image:caption>Nossos Produtos: Placas Midtile.</image:caption>
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://www.revitechpisos.com.br/placas-reguas-ecoidea.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/placas-reguas-ecoidea-v2.jpg</image:loc>
+       <image:caption>Nossos Produtos: Placas Ecoidea.</image:caption>
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://www.revitechpisos.com.br/placas-reguas-heavy.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/placas-reguas-heavy.jpg</image:loc>
+       <image:caption>Nossos Produtos: Placas Heavy.</image:caption>
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://www.revitechpisos.com.br/placas-cromo.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/placas-reguas-heavy.jpg</image:loc>
+       <image:caption>Nossos Produtos: Placas Cromo.</image:caption>
+    </image:image>
+  </url>
+
+  <url> 
+    <loc>http://www.revitechpisos.com.br/reguas-premium.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/reguas-premium.jpg</image:loc>
+       <image:caption>Nossos Produtos: Réguas Premium.</image:caption>
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://www.revitechpisos.com.br/reguas-ecoidea.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/placas-reguas-ecoidea.jpg</image:loc>
+       <image:caption>Nossos Produtos: Réguas Ecoidea.</image:caption>
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://www.revitechpisos.com.br/reguas-heavy.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/placas-reguas-heavy.jpg</image:loc>
+       <image:caption>Nossos Produtos: Réguas Heavy.</image:caption>
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://www.revitechpisos.com.br/reguas-residence.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/reguas.jpg</image:loc>
+       <image:caption>Nossos Produtos: Réguas Residence.</image:caption>
+    </image:image>
+  </url>
+
+  <url> 
+    <loc>http://www.revitechpisos.com.br/nossosprojetos.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.8</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/nossosprojetos.jpg</image:loc>
+       <image:caption>Nossos Projetos. Atendem às normas técnicas brasileiras e européias. Podem ser instalados sobre outras superfícies. Possibilidade de paginações diversas. A Revitech Pisos Vinílicos busca sempre o melhor e não descansa até alcançar a excelência.</image:caption>
+    </image:image>
+  </url>
+
+  <url> 
+    <loc>http://www.revitechpisos.com.br/esclarecaduvidas.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.7</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/esclarecaduvidas.jpg</image:loc>
+       <image:caption>Esclareça suas dúvidas. Confira dicas que a Revitech Pisos Vinílicos preparou para você e tire suas dúvidas. ACESSÓRIOS: depois de você escolher pisos vinílicos Revitech, adquira também os melhores acessórios do mercado para um melhor acabamento. Vale lembrar que, para instalação, há alguns itens obrigatórios e outros opcionais. Confira. MANTAS: são acessórios obrigatórios o cordão de solda para junção e vulcanização das mantas e canto curvo para a subida da manta na parede, usado sempre dentro da área de saúde. Já o Perfil de rodapé é opcional. PLACAS E RÉGUAS: para melhor acabamento, adquirir Rodapé de Poliestireno. Para sua obra ser prima, fique atento principalmente na hora da instalação. CONTRAPISO: o contrapiso é o item mais importante na hora da instalação. Isso porque o resultado final de uma instalação, bem como sua durabilidade, depende muito do contrapiso. Modelos de padrão ou cor não irão compensar ou alterar um contrapiso de má qualidade. O instalador deve orientar o cliente e dar soluções, quando necessário. Lembrando que a base deve estar sempre em perfeitas condições de limpeza e nivelação, além de secas, curadas e firmes. Confira o que é permitido e não permitido no contrapiso. Qual é o melhor tipo de piso para a sua obra? PISOS HOMOGÊNEOS X PISOS HETEROGÊNEOS. Entenda as diferenças no momento de adquirir pisos homogêneos e heterogêneos para sua obra. Os pisos HOMOGÊNEOS oferecem uma gama maior de cores, com massa única e diversidade tanto em espessuras quanto no tamanho das mantas. Entre as características do piso homogêneo, um dos fatores mais importantes é a proteção superficial que define o desgaste do piso por igual. Já os HETEROGÊNEOS são produzidos em diferentes camadas e apresentam coleções e design variados, além de cores lisas, amadeiradas e desenhadas. Seu perfil agrega muitas espessuras de manta e capa de uso (wear layer) em PVC. Deixe o ambiente com a sua cara! Personalize sua obra com a Revitech. PAGINAÇÃO: dar personalidade ao ambiente é uma das chaves de sucesso para uma obra bem-sucedida. Para isso, o trabalho de paginação utiliza desenhos que fazem o elo perfeito entre piso, parede e mobiliário. A paginação – diagonal, diagonal com tabeira, espinha de peixe, longitudinal, xadrez e figuras – agiliza o processo de instalação, onde o material pode ser quantificado corretamente, proporcionando uma visão antecipada da distribuição do piso, auxiliando a visualização do cliente.</image:caption>
+    </image:image>
+  </url>
+
+  <url> 
+    <loc>http://www.revitechpisos.com.br/ondeencontrar.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.6</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/ondeencontrar.jpg</image:loc>
+       <image:caption>Veja onde encontrar Nossas Revendas.</image:caption>
+    </image:image>
+  </url>
+
+  <url> 
+    <loc>http://www.revitechpisos.com.br/recrutamento.php</loc> 
+    <lastmod>2018-04-10</lastmod>
+    <priority>0.5</priority>
+    <image:image>
+       <image:loc>http://www.revitechpisos.com.br/images/banners/esclarecaduvidas.jpg</image:loc>
+       <image:caption>Venha fazer parte desta Equipe. Preencha o formulário e clique em ENVIAR.</image:caption>
+    </image:image>
+  </url>
+</urlset>

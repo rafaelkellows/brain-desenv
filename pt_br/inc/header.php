@@ -19,7 +19,7 @@
         <nav class="s_acesso">
           <a href="https://www.newconsolidation.com" target="_blank" title="Offshore">Offshore</a> 
           <a href="http://brainvest.smartadvisor.com.br" target="_blank" title="Onshore">Onshore</a> 
-          <a href="javascript:void(0);" class="restrict" target="_blank" title="Área Exclusiva">Área Exclusiva</a> 
+          <!--a href="javascript:void(0);" class="restrict" title="Área Exclusiva">Área Exclusiva</a--> 
         </nav>
         <nav class="s_others">
           <a href="javascript:void(0);">Downloads</a>
@@ -27,12 +27,12 @@
           <a href="javascript:void(0);">Contatos</a>
         </nav>
         <nav class="s_menu">
-          <a href="serbrain.html">O que é ser Brainvest?</a>
-          <a href="pilares.html">Os pilares Brainvest</a>
-          <a href="comoinvestir.html">Como investir com a Brainvest</a>
-          <a href="time.html">Time Brainvest</a>
-          <a href="manifesto.html">Manifesto</a>
+          <a href="serbrain.php">O que é ser Brainvest?</a>
+          <a href="pilares.php">Os pilares Brainvest</a>
+          <a href="comoinvestir.php">Como investir com a Brainvest</a>
+          <a href="time.php">Time Brainvest</a>
+          <a href="manifesto.php">Manifesto</a>
           <a href="/news" target="_blank">News</a>
         </nav>
-        <h1><a href="index.html" title="Brainvest - Wealth Management"><img src="../images/logo-brainvest-topo.png" alt="Brainvest - Wealth Management" /></a></h1>
+        <h1><a href="./" title="Brainvest - Wealth Management"><img src="../images/logo-brainvest-topo.png" alt="Brainvest - Wealth Management" /></a></h1>
       </header>      
